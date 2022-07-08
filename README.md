@@ -25,7 +25,6 @@ const account = {
 - 👨‍🎓 First Class Batchelor in Computer Networking.
 - 🔌 Links
   - ↪️ [Linktree](https://linktr.ee/yanukadeneth99)
-  - ↪️ [Linktree (Music)](https://linktr.ee/yashura)
   - ↪️ [Twitter](https://twitter.com/yanukadeneth99)
   - ↪️ [Github](https://github.com/yanukadeneth99)
 
@@ -35,17 +34,17 @@ const account = {
 <table align="left">
   <tr>
     <td align="center" width="120px">
-      <a href="https://www.javascript.com/">
-        <img src="http://developerpitstop.com/wp-content/uploads/2022/01/Javascript_Logo.png" width="50" height="50" alt="JavaScript" />
+      <a href="https://www.typescriptlang.org/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" width="50" height="50" alt="Typescript" />
       <br>
-      JavaScript
+      Typescript
       </a>
     </td>
     <td align="center" width="120px">
-      <a href="https://www.mongodb.com/">
-        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld" width="50" height="50" alt="Mongo DB" />
+      <a href="https://nextjs.org/">
+        <img src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" width="50" height="50" alt="Next JS" />
       <br>
-      Mongo DB
+      Next JS
       </a>
     </td>
     <td align="center" width="120px">
@@ -77,10 +76,10 @@ const account = {
       </a>
     </td>
     <td align="center" width="120px">
-      <a href="https://www.typescriptlang.org/">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png" width="50" height="50" alt="Typescript" />
+      <a href="https://www.javascript.com/">
+        <img src="http://developerpitstop.com/wp-content/uploads/2022/01/Javascript_Logo.png" width="50" height="50" alt="JavaScript" />
       <br>
-      Typescript
+      JavaScript
       </a>
     </td>
     <td align="center" width="120px">
