@@ -5,6 +5,7 @@
 ```javascript
 const account = {
   name : "Yanuka Deneth",
+  favFood : "Pizza",
   location : "Sri-Lanka",
   skills : [
     "Web Development",
@@ -13,16 +14,13 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.0
+  _v : 1.1
 }
 ```
 
 <!-- Summary Section -->
-<h2 align="right"> Quick Glance 👀 </h2>
+<h2 align="right"> Get to know me 👀 </h2>
 
-- 🧲 Tagline : Keen Individual self-learning Blockchain Development (Solidity, Hardhat) being a Full Stack Web Developer (MERN), while having experience working on Monorepos (NX), VPS (Pm2, NGINX, Linux), C++, Java, SQL, UE4, Reaper.
-- 👨‍💻 Currently working on **[ASCIIX]** and **[USHIFT MUSIC]**.
-- 👨‍🎓 First Class Batchelor in Computer Networking.
 - 🔌 Links
   - ↪️ [Linktree](https://linktr.ee/yanukadeneth99)
   - ↪️ [Twitter](https://twitter.com/yanukadeneth99)
@@ -93,20 +91,6 @@ const account = {
 </table>
 
 <br /><br /><br /><br /><br /><br />
-<!-- Portfolio Websites Section -->
-<h2 align="right"> Latest/Portfolio 🏛️ </h2><br />
-
-<!-- Start : ASCIIX -->
-<a href="https://asciix.com">
-  <img src="https://i.imgur.com/aIH4Adh.png" alt="ASCIIX Website" align="right" width="400px" height="200px"/>
-</a>
-
-<a href="https://asciix.com"><h3>ASCIIX - Software Company</h3></a>
-ASCIIX is a company formed to bring solutions for a wide range of IT and Digital Marketing requirements in the modern day.
-<h5>Status : WIP</h5>
-<!-- End : ASCIIX -->
-
-<br /><br /><br /><br /><br />
 
 <!-- Blogs -->
 <h2 align="right"> Blogs ✍️ </h2><br />
@@ -127,11 +111,6 @@ ASCIIX is a company formed to bring solutions for a wide range of IT and Digital
 <!-- Contributions -->
 <h2 align="right"> Contributions 👨‍⚕️ </h2><br />
 Contributions, Suggestions, Feedback and Corrections are <b>much appreciated</b>. Just edit this document and do a pull request!
-
-<br /><br /><br /><br />
-
-<!-- Thanks -->
-<h3 align="center"> 🖤 Thank you for taking your time to read this 🖤 <h3>
 
 <!-- Objects -->
 [ASCIIX]: https://asciix.com "ASCIIX : Software Engineering Company (https://asciix.com)"
