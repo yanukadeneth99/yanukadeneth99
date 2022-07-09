@@ -14,17 +14,9 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.1
+  _v : 1.2
 }
 ```
-
-<!-- Summary Section -->
-<h2 align="right"> Get to know me 👀 </h2>
-
-- 🔌 Links
-  - ↪️ [Linktree](https://linktr.ee/yanukadeneth99)
-  - ↪️ [Twitter](https://twitter.com/yanukadeneth99)
-  - ↪️ [Github](https://github.com/yanukadeneth99)
 
 <!-- Tech Section -->
 <h2 align="right"> Most Used Tech 💻 </h2><br />
@@ -98,19 +90,13 @@ const account = {
   <li><a href="https://medium.com/@yanukadeneth99">Medium Account (No Blogs yet)</a></li>
 </ul>
 
-<br /><br /><br /><br />
+<br /><br />
 
 <!-- Full Tech Stack -->
 <h2 align="right"> Full Tech Stack 🏗️ </h2><br />
 
 <img src="https://i.imgur.com/5vNPPQh.png" />
 <a href="https://www.showwcase.com/yanukadeneth99">2022 Source - Showwcase</a>
-
-<br /><br />
-
-<!-- Contributions -->
-<h2 align="right"> Contributions 👨‍⚕️ </h2><br />
-Contributions, Suggestions, Feedback and Corrections are <b>much appreciated</b>. Just edit this document and do a pull request!
 
 <!-- Objects -->
 [ASCIIX]: https://asciix.com "ASCIIX : Software Engineering Company (https://asciix.com)"
