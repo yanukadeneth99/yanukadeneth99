@@ -14,7 +14,7 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.2
+  _v : 1.3
 }
 ```
 
@@ -87,7 +87,7 @@ const account = {
 <!-- Blogs -->
 <h2 align="right"> Blogs ✍️ </h2><br />
 <ul>
-  <li><a href="https://medium.com/@yanukadeneth99">Medium Account (No Blogs yet)</a></li>
+  <li><a href="https://yanukadeneth99.medium.com/why-github-32ae203669b7">Why GitHub?</a></li>
 </ul>
 
 <br /><br />
