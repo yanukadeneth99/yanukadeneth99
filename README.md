@@ -1,6 +1,12 @@
 <!-- Header -->
 <h1 align="right"> 👋 Hello! Welcome to my profile 📸 </h1>
 
+<div align="center">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=yanukadeneth99&count_private=true&show_icons=true&theme=dark" />
+</div>
+
+<br /><br />
+
 <!-- About Me -->
 ```javascript
 const account = {
@@ -14,9 +20,10 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.3
+  _v : 1.4
 }
 ```
+
 
 <!-- Tech Section -->
 <h2 align="right"> Most Used Tech 💻 </h2><br />
@@ -81,6 +88,20 @@ const account = {
     </td>
   </tr>     
 </table>
+
+<br /><br /><br /><br /><br /><br />
+
+<!-- Portfolio -->
+<h2 align="right"> Portfolio Section 📚 </h2><br />
+
+<div>
+  <a href="https://github.com/yanukadeneth99/DAO-DApp">
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=DAO-DApp&theme=dark" />
+  </a>
+  <a href="https://github.com/yanukadeneth99/TestingGrounds">
+    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=TestingGrounds&theme=dark" />
+  </a>
+</div>
 
 <br /><br /><br /><br /><br /><br />
 
