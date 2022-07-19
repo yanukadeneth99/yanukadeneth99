@@ -5,7 +5,14 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=yanukadeneth99&count_private=true&show_icons=true&theme=dark" />
 </div>
 
-<br /><br />
+<br />
+<div align="center">
+  <img align="center" src="https://img.shields.io/discord/847154458395541525?label=ASCIIX%20Discord&style=for-the-badge" />
+  <img align="center" src="https://img.shields.io/github/followers/yanukadeneth99?label=Github%20Follow&style=for-the-badge" />
+  <img align="center" src="https://img.shields.io/twitter/follow/yanukadeneth99?label=Follow%20Twitter&style=for-the-badge" />
+</div>
+
+<br />
 
 <!-- About Me -->
 ```javascript
@@ -20,7 +27,7 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.4
+  _v : 1.5
 }
 ```
 
