@@ -21,13 +21,12 @@ const account = {
   favFood : "Pizza",
   location : "Sri-Lanka",
   skills : [
-    "Web Development",
-    "Learning Blockchain Development",
+    "Web2/Web3 Development",
     "Game Development",
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.7
+  _v : 1.8
 }
 ```
 
