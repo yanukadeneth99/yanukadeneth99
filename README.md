@@ -27,7 +27,7 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.6
+  _v : 1.7
 }
 ```
 
@@ -107,6 +107,29 @@ const account = {
   </a>
   <a href="https://github.com/yanukadeneth99/TestingGrounds">
     <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=TestingGrounds&theme=dark" />
+  </a>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<!-- Starter Template Sets -->
+<h3 align="left"> Starter Templates </h3><br />
+<div>
+  <a href="https://github.com/yanukadeneth99/startertemp-nextjs-hardhat-ts">
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=startertemp-nextjs-hardhat-ts&theme=dark" />
+  </a>
+  <a href="https://github.com/yanukadeneth99/startertemp-nextjs">
+    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=startertemp-nextjs&theme=dark" />
+  </a>
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
+<!-- Hackathon -->
+<h3 align="left"> Hackathon Projects </h3><br />
+<div>
+  <a href="https://github.com/Aayushd18/Fat-Tubbys">
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=Aayushd18&repo=Fat-Tubbys&theme=dark" />
   </a>
 </div>
 
