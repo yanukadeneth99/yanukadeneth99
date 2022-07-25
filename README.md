@@ -27,7 +27,7 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.5
+  _v : 1.6
 }
 ```
 
@@ -102,8 +102,8 @@ const account = {
 <h2 align="right"> Portfolio Section 📚 </h2><br />
 
 <div>
-  <a href="https://github.com/yanukadeneth99/DAO-DApp">
-    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=DAO-DApp&theme=dark" />
+  <a href="https://github.com/yanukadeneth99/WhitelistDApp">
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=WhitelistDApp&theme=dark" />
   </a>
   <a href="https://github.com/yanukadeneth99/TestingGrounds">
     <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=TestingGrounds&theme=dark" />
