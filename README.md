@@ -26,7 +26,7 @@ const account = {
     "Basic Networking",
     "Music Production"
    ],
-  _v : 1.9
+  _v : 2.0
 }
 ```
 
@@ -99,6 +99,20 @@ const account = {
 
 <!-- Portfolio -->
 <h2 align="right"> Portfolio Section 📚 </h2><br />
+
+<!-- Web3 Section -->
+<h3 align="left"> Web3 projects </h3><br />
+
+<div>
+  <a href="https://github.com/yanukadeneth99/D-Tracker">
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=D-Tracker&theme=dark" />
+  </a>
+  <!--a href="https://github.com/yanukadeneth99/WhitelistDApp">
+    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=WhitelistDApp&theme=dark" />
+  </a-->
+</div>
+
+<br /><br /><br /><br /><br /><br />
 
 <div>
   <a href="https://github.com/yanukadeneth99/Meme-NFT">
