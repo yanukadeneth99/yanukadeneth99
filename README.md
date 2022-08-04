@@ -1,10 +1,6 @@
 <!-- Header -->
 <h1 align="right"> 👋 Hello! Welcome to my profile 📸 </h1>
 
-<div align="center">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=yanukadeneth99&count_private=true&show_icons=true&theme=dark" />
-</div>
-
 <br />
 <div align="center">
   <img align="center" src="https://img.shields.io/discord/847154458395541525?label=ASCIIX%20Discord&style=for-the-badge" />
@@ -12,29 +8,23 @@
   <img align="center" src="https://img.shields.io/twitter/follow/yanukadeneth99?label=Follow%20Twitter&style=for-the-badge" />
 </div>
 
+<table>
+  <tr>
+    <td>
+       <a href="https://github.com/yanukadeneth99"><img alt="Yanuka Github Stats" src="https://github-readme-stats.vercel.app/api?username=yanukadeneth99&show_icons=true&count_private=true&theme=dracula&hide_border=true&bg_color=0D1117" /></a>
+    </td>
+    <td>
+       <a href="http://www.github.com/yanukadeneth99"><img src="https://github-readme-streak-stats.herokuapp.com/?user=yanukadeneth99&background=0D1117&ring=D85F82&fire=D85F82&currStreakNum=ffffff&currStreakLabel=D85F82&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
+    </td>
+    <td>
+      <a href="https://github.com/yanukadeneth99"><img alt="Yanuka Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yanukadeneth99&langs_count=10&count_private=true&layout=compact&theme=dracula&hide_border=true&bg_color=0D1117&exclude_repo=GameSellShop"/></a>
+    </td>
+  </tr>
+</table>
+
 <br />
 
-<!-- About Me -->
-```javascript
-const account = {
-  name : "Yanuka Deneth",
-  favFood : "Pizza",
-  location : "Sri-Lanka",
-  skills : [
-    "Web2/Web3 Development",
-    "Game Development",
-    "Basic Networking",
-    "Music Production"
-   ],
-  _v : 2.0
-}
-```
-
-
-<!-- Tech Section -->
-<h2 align="right"> Most Used Tech 💻 </h2><br />
-
-<table align="left">
+<table align="center">
   <tr>
     <td align="center" width="120px">
       <a href="https://www.typescriptlang.org/">
@@ -51,17 +41,17 @@ const account = {
       </a>
     </td>
     <td align="center" width="120px">
-      <a href="https://expressjs.com/">
-        <img src="https://images.tute.io/tute/topic/express-js.png" width="50" height="50" alt="ExpressJS" />
+      <a href="https://svelte.dev/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/1200px-Svelte_Logo.svg.png" width="50" height="50" alt="Svelte" />
       <br>
-      Express JS
+      Svelte
       </a>
     </td>
     <td align="center" width="120px">
       <a href="https://reactjs.org/">
-        <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width="50" height="50" alt="React JS" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" width="50" height="50" alt="Express JS" />
       <br>
-      React JS
+      Express JS
       </a>
     </td>
     <td align="center" width="120px">
@@ -79,10 +69,10 @@ const account = {
       </a>
     </td>
     <td align="center" width="120px">
-      <a href="https://www.javascript.com/">
-        <img src="http://developerpitstop.com/wp-content/uploads/2022/01/Javascript_Logo.png" width="50" height="50" alt="JavaScript" />
+      <a href="https://hardhat.org/">
+        <img src="https://seeklogo.com/images/H/hardhat-logo-888739EBB4-seeklogo.com.png" width="50" height="50" alt="Hardhat" />
       <br>
-      JavaScript
+      Hardhat
       </a>
     </td>
     <td align="center" width="120px">
@@ -95,7 +85,9 @@ const account = {
   </tr>     
 </table>
 
-<br /><br /><br /><br /><br /><br />
+<br />
+
+![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=yanukadeneth99&theme=redical&bg_color=0D1117&color=D85F82&line=D85F82&point=FFFFFF&hide_border=true)
 
 <!-- Portfolio -->
 <h2 align="right"> Portfolio Section 📚 </h2><br />
@@ -105,10 +97,10 @@ const account = {
 
 <div>
   <a href="https://github.com/yanukadeneth99/D-Tracker">
-    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=D-Tracker&theme=dark" />
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=D-Tracker&theme=dracula&bg_color=0D1117" />
   </a>
   <!--a href="https://github.com/yanukadeneth99/WhitelistDApp">
-    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=WhitelistDApp&theme=dark" />
+    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=WhitelistDApp&theme=dracula&bg_color=0D1117" />
   </a-->
 </div>
 
@@ -116,10 +108,10 @@ const account = {
 
 <div>
   <a href="https://github.com/yanukadeneth99/Meme-NFT">
-    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=Meme-NFT&theme=dark" />
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=Meme-NFT&theme=dracula&bg_color=0D1117" />
   </a>
   <a href="https://github.com/yanukadeneth99/WhitelistDApp">
-    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=WhitelistDApp&theme=dark" />
+    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=WhitelistDApp&theme=dracula&bg_color=0D1117" />
   </a>
 </div>
 
@@ -129,10 +121,10 @@ const account = {
 <h3 align="left"> Starter Templates </h3><br />
 <div>
   <a href="https://github.com/yanukadeneth99/startertemp-nextjs-hardhat-ts">
-    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=startertemp-nextjs-hardhat-ts&theme=dark" />
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=startertemp-nextjs-hardhat-ts&theme=dracula&bg_color=0D1117" />
   </a>
   <a href="https://github.com/yanukadeneth99/startertemp-nextjs">
-    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=startertemp-nextjs&theme=dark" />
+    <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=yanukadeneth99&repo=startertemp-nextjs&theme=dracula&bg_color=0D1117" />
   </a>
 </div>
 
@@ -142,7 +134,7 @@ const account = {
 <h3 align="left"> Hackathon Projects </h3><br />
 <div>
   <a href="https://github.com/Aayushd18/Fat-Tubbys">
-    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=Aayushd18&repo=Fat-Tubbys&theme=dark" />
+    <img align="left" src="https://github-readme-stats.vercel.app/api/pin/?username=Aayushd18&repo=Fat-Tubbys&theme=dracula&bg_color=0D1117" />
   </a>
 </div>
 
