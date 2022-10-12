@@ -3,7 +3,6 @@
 
 <br />
 <div align="center">
-  <img align="center" src="https://img.shields.io/discord/847154458395541525?label=Discord&style=for-the-badge" />
   <img align="center" src="https://img.shields.io/github/followers/yanukadeneth99?label=Github&style=for-the-badge" />
   <img align="center" src="https://img.shields.io/twitter/follow/yanukadeneth99?label=Twitter&style=for-the-badge" />
 </div>
