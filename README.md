@@ -23,7 +23,8 @@
 <!-- Blogs -->
 <h2 align="right"> Blogs ✍️ </h2><br />
 <ul>
-  <li><a href="https://yanukadeneth99.medium.com/why-github-32ae203669b7">Why GitHub?</a></li>
+  <li><a href="https://yashura.hashnode.dev/">Tech Articles</a></li>
+  <li><a href="https://blog.ushiftmusic.com/">Music Articles</a></li>
 </ul>
 
 <br /><br />
