@@ -18,7 +18,7 @@
   </tr>
 </table>
 
-![GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=yanukadeneth99&theme=redical&bg_color=0D1117&color=D85F82&line=D85F82&point=FFFFFF&hide_border=true)
+![GitHub Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=yanukadeneth99&theme=redical&bg_color=0D1117&color=D85F82&line=D85F82&point=FFFFFF&hide_border=true)
 
 <!-- Blogs -->
 <h2 align="right"> Blogs ✍️ </h2><br />
