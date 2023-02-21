@@ -3,8 +3,7 @@
 
 <br />
 <div align="center">
-  <img align="center" src="https://img.shields.io/github/followers/yanukadeneth99?label=Github&style=for-the-badge" />
-  <img align="center" src="https://img.shields.io/twitter/follow/yanukadeneth99?label=Twitter&style=for-the-badge" />
+  <img align="center" alt="Twitter Follow" src="https://img.shields.io/twitter/follow/yanukadeneth99?style=social">
 </div>
 
 <table align="center">
@@ -23,7 +22,7 @@
 <!-- Blogs -->
 <h2 align="right"> Blogs ✍️ </h2><br />
 <ul>
-  <li><a href="https://yashura.hashnode.dev/">Tech Articles</a></li>
+  <li><a href="https://blog.asciix.com/author/yashura/">Tech Articles</a></li>
   <li><a href="https://blog.ushiftmusic.com/">Music Articles</a></li>
 </ul>
 
