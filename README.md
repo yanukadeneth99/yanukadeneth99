@@ -2,9 +2,6 @@
 <h1 align="right"> 👋 Hello! Welcome to my profile 📸 </h1>
 
 <br />
-<div align="center">
-  <img align="center" alt="Twitter Follow" src="https://img.shields.io/twitter/follow/yanukadeneth99?style=social">
-</div>
 
 <table align="center">
   <tr>
@@ -20,10 +17,10 @@
 ![GitHub Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=yanukadeneth99&theme=redical&bg_color=0D1117&color=D85F82&line=D85F82&point=FFFFFF&hide_border=true)
 
 <!-- Blogs -->
-<h2 align="right"> Blogs ✍️ </h2><br />
+<h2 align="right"> Links ✍️ </h2><br />
 <ul>
-  <li><a href="https://blog.asciix.com/author/yashura/">Tech Articles</a></li>
-  <li><a href="https://blog.ushiftmusic.com/">Music Articles</a></li>
+  <li><a href="https://yashura.hashnode.dev/">Articles - Hashnode</a></li>
+  <li><a href="https://linktr.ee/yanukadeneth99">Know more about me</a></li>
 </ul>
 
 <br /><br />
