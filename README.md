@@ -3,6 +3,12 @@
 
 <br />
 
+<p>
+I'm Yashura. Building tools, telling stories, and making noise across code, sound, and live shows. From web & blockchain to music & media, I’m always creating something real.
+</p>
+
+<br />
+
 <table align="center">
   <tr>
     <td align="left">
@@ -10,11 +16,6 @@
     </td>
     <td align="right">
       <a href="https://github.com/yanukadeneth99"><img alt="Yanuka Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yanukadeneth99&langs_count=10&count_private=true&layout=compact&theme=dracula&hide_border=true&bg_color=0D1117&exclude_repo=GameSellShop,Image-Captioning-DL"/></a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://profile-counter.glitch.me/{yanukadeneth99}/count.svg" alt="yanukadeneth99 :: Visitor's Count" />
     </td>
   </tr>
 </table>
