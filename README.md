@@ -4,7 +4,7 @@
 <br />
 
 <p>
-I'm Yashura. Building tools, telling stories, and making noise across code, sound, and live shows. From web & blockchain to music & media, I’m always creating something real.
+I'm Yashura. Building tools, telling stories, and making noise across to create real things.
 </p>
 
 <br />
