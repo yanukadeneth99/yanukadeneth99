@@ -1,14 +1,6 @@
 <!-- Header -->
 <h1 align="right"> 👋 Hello! Welcome to my profile 📸 </h1>
 
-<br />
-
-<p>
-I'm Yashura. Building tools, telling stories, and making noise across to create real things.
-</p>
-
-<br />
-
 <table align="center">
   <tr>
     <td align="left">
