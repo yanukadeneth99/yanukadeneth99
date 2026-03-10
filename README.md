@@ -21,7 +21,7 @@
 
 <p align="center">
   <img width="29.2%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yanukadeneth99&theme=github_dark&title_color=2f81f6&v=2" alt="Languages" height="200" />
-  <img width="60%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yanukadeneth99&theme=github_dark&title_color=&v=2" alt="Profile Details" />
+  <img width="60%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yanukadeneth99&theme=github_dark&title_color=2f81f6&v=2" alt="Profile Details" />
 </p>
 
 <p align="center">
