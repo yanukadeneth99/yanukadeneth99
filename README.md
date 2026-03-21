@@ -10,7 +10,7 @@
   </a>
 </p>
 
-> I am a Creative Technologist with the impossible dream to have global impact by being the engine that powers the worlds best stories.
+> A Creative Technologist with the impossible dream to have global impact by being the engine that powers the worlds best stories.
 
 <div align="left">
   
