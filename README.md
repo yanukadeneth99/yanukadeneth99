@@ -10,6 +10,16 @@
   </a>
 </p>
 
+> I am a Creative Technologist with the impossible dream to have global impact by being the engine that powers the worlds best stories.
+
+<div align="left">
+  
+Having both the creative mindset and the engineering mindset, I aim to specialize in **Integrating AI** enhancing workflows and creating meaningful applications. The following are private applications I am building to enhance my workflows:
+
+- 🐦‍⬛ **RAVEN**: A modular, self-evolving neurobiology inspired personal AI assistant that combines structured perception, memory, and decision layers to think, act, and improve over time.
+
+</div>
+
 <br>
 
 <p align="center">
