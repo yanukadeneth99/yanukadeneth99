@@ -10,9 +10,9 @@
   </a>
 </p>
 
-> A Creative Technologist with the impossible dream to have a global impact by being the engine that powers the world's best stories.
-
 <div align="left">
+
+> A Creative Technologist with the impossible dream to have a global impact by being the engine that powers the world's best stories.
   
 Having both the creative mindset and the engineering mindset, I aim to specialize in **Integrating AI** enhancing workflows and creating meaningful applications. The following are private applications I am building to enhance my workflows:
 
