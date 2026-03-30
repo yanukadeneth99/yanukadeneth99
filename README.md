@@ -1,6 +1,8 @@
 <div align="center">
 
-# Hi there, I'm [Yanuka](https://yanukadeneth.com)! 👋
+<p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&duration=3000&pause=1000&color=2f81f6&center=true&vCenter=true&repeat=true&width=600&height=30&lines=Greetings!;Yashura+here;I'm+a+Creative+Technologist;with+an+impossible+dream" alt="Typing SVG" /></a>
+</p>
 
 <p align="center">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=yanukadeneth99.yanukadeneth99&" alt="Visitors" />
@@ -11,8 +13,8 @@
 </p>
 
 <div align="left">
-
-> A Creative Technologist with the impossible dream to have a global impact by being the engine that powers the world's best stories.
+  
+> To make a global impact by being the engine that powers the world's best stories.
   
 Having both the creative mindset and the engineering mindset, I aim to specialize in **Integrating AI** enhancing workflows and creating meaningful applications. The following are private applications I am building to enhance my workflows:
 
