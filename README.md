@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&duration=3000&pause=1000&color=2f81f6&center=true&vCenter=true&repeat=true&width=600&height=30&lines=Greetings!;Yashura+here;I'm+a+Creative+Technologist;with+an+impossible+dream" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=30&duration=3000&pause=1000&color=2f81f6&center=true&vCenter=true&repeat=true&width=600&height=30&lines=Greetings!;Yashura+here;I'm+a+Creative+Technologist" alt="Typing SVG" /></a>
 </p>
 
 <p align="center">
@@ -12,13 +12,9 @@
   </a>
 </p>
 
-<div align="left">
+<div align="center">
   
-> To make a global impact by being the engine that powers the world's best stories.
-  
-Having both the creative mindset and the engineering mindset, I aim to specialize in **Integrating AI** enhancing workflows and creating meaningful applications. The following are private applications I am building to enhance my workflows:
-
-- 🐦‍⬛ **RAVEN**: A modular, self-evolving neurobiology inspired personal AI assistant that combines structured perception, memory, and decision layers to think, act, and improve over time.
+Having both the creative mindset and the engineering mindset, I aim to specialize in **Integrating AI** enhancing workflows and creating meaningful applications.
 
 </div>
 
