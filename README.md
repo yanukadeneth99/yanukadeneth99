@@ -25,7 +25,7 @@ Having both the creative mindset and the engineering mindset, I aim to specializ
 <br>
 
 <p align="center">
-  <a href="https://github.com/yanukadeneth99/openclaw-docker-cloudflare-zero-trust"><img src="https://readme-stats-fast.vercel.app/api/pin?username=yanukadeneth99&repo=openclaw-docker-cloudflare-zero-trust&theme=github_dark" alt="OpenClaw Docker Repo" /></a>
+  <a href="https://github.com/yanukadeneth99/cue-clock"><img src="https://readme-stats-fast.vercel.app/api/pin?username=yanukadeneth99&repo=cue-clock&theme=github_dark" alt="Cue CLock" /></a>
   <a href="https://github.com/yanukadeneth99/Discord-Faucet-Bot"><img src="https://readme-stats-fast.vercel.app/api/pin?username=yanukadeneth99&repo=Discord-Faucet-Bot&theme=github_dark" alt="Discord Faucet Bot" /></a>
 </p>
 
