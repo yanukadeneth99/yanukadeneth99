@@ -58,7 +58,7 @@
              fetches the freshly-deployed promo-card variant instead of
              serving its cached pre-deploy copy. Bump the number whenever
              the widget needs a forced refresh. -->
-        <img width="420" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify?cb=3" alt="Spotify Now Playing" />
+        <img width="420" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify?cb=4" alt="Spotify Now Playing" />
       </a>
       <br/>
       <!-- Secondary CTA under Spotify widget, flat-square keeps it visually
