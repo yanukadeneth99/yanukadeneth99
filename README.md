@@ -76,7 +76,11 @@
      clicking opens the actual post on X. -->
 
 <!-- XPOSTS:START -->
-<p><em>Waiting for the next workflow run to populate this…</em></p>
+<p>
+  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779187223585" alt="X post 2056199834722558071" width="540" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779187223585" alt="X post 2055873061065462139" width="540" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779187223585" alt="X post 2056233376223523223" width="540" /></a>
+</p>
 <!-- XPOSTS:END -->
 
 ---
