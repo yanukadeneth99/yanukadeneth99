@@ -53,7 +53,7 @@
       </a>
     </td>
     <td align="center">
-      <a href="https://open.spotify.com/artist/4Yo79ck5nJ8Cplrf2DrKOG">
+      <a href="https://hhzluaxzb4smr2jmra.vercel.app/redirect">
         <!-- ?cb=1 is a one-time cache-buster so GitHub's camo image proxy
              fetches the freshly-deployed promo-card variant instead of
              serving its cached pre-deploy copy. Bump the number whenever
@@ -63,7 +63,7 @@
       <br/>
       <!-- Secondary CTA under Spotify widget, flat-square keeps it visually
            subordinate to the top-row badges. -->
-      <a href="https://open.spotify.com/artist/4Yo79ck5nJ8Cplrf2DrKOG">
+      <a href="https://hhzluaxzb4smr2jmra.vercel.app/redirect">
         <img src="https://img.shields.io/badge/%E2%96%B6%20Listen%20on%20Spotify-1DB954?style=flat-square&logo=spotify&logoColor=white" alt="Listen on Spotify" />
       </a>
     </td>
