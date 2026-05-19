@@ -45,9 +45,7 @@
 ### 🛠 Currently Building
 
 <!-- BUILDING:START -->
-
-> 🌱 _Waiting for the first workflow run to populate this..._
-
+> 🌱 _Quiet on the public side right now — probably deep in a private repo._
 <!-- BUILDING:END -->
 
 ---
