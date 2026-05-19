@@ -128,7 +128,28 @@ function xml(s) {
     .replace(/'/g, "&apos;");
 }
 
-function wrapText(text, maxChars = 70) {
+// Tokenize a wrapped line so @mentions and #hashtags get rendered in the
+// accent purple — same convention X uses in its own UI. SVG nested <tspan>
+// inherits position from the parent <text> and only overrides fill, so we
+// don't need to recompute x/y per token. All non-token text still flows
+// inline with normal whitespace.
+function colorizeLine(line, accent) {
+  // Split on whitespace-prefixed @/# tokens, keeping the prefix as part of
+  // the captured group so we don't lose leading spaces between words.
+  const parts = line.split(/(\s*[@#][A-Za-z0-9_]+)/g);
+  return parts
+    .map((part) => {
+      const m = part.match(/^(\s*)([@#][A-Za-z0-9_]+)$/);
+      if (m) return `${xml(m[1])}<tspan fill="${accent}">${xml(m[2])}</tspan>`;
+      return xml(part);
+    })
+    .join("");
+}
+
+// Card text area = 540 - 18*2 padding - 40 avatar - 14 gutter = 450px.
+// At 15px font ≈ 7.5px/char average → ~60 chars max. 56 gives safety margin
+// for wider glyphs (M, W, capitalized handles) without producing cramped lines.
+function wrapText(text, maxChars = 56) {
   const words = text.replace(/\s+/g, " ").trim().split(" ");
   const lines = [];
   let cur = "";
@@ -225,10 +246,11 @@ function tweetSvg(tweet, profile, idx) {
       <tspan fill="${COLOR.muted}">  ${xml(handle)} · ${xml(time)}</tspan>
     </text>`;
 
+  // colorizeLine does its own xml() per part, so we don't double-escape here.
   const bodyTspans = lines
     .map(
       (ln, i) =>
-        `<tspan x="${contentX}" dy="${i === 0 ? 0 : CARD.bodyLineHeight}">${xml(ln)}</tspan>`,
+        `<tspan x="${contentX}" dy="${i === 0 ? 0 : CARD.bodyLineHeight}">${colorizeLine(ln, COLOR.accent)}</tspan>`,
     )
     .join("");
   const body = `<text x="${contentX}" y="${bodyStartY}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="${COLOR.text}">${bodyTspans}</text>`;

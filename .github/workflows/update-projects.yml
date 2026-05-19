@@ -1,6 +1,6 @@
 name: Update Projects Section
 
-# Triggered whenever you edit shipped.json. Also exposed via workflow_dispatch
+# Triggered whenever you edit projects.json. Also exposed via workflow_dispatch
 # in case you want to manually re-render (e.g. after editing the script).
 #
 # NOTE: counts.json and .github/assets/bricks/*.svg are deliberately NOT in
@@ -10,7 +10,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/data/shipped.json"
+      - ".github/data/projects.json"
       - ".github/scripts/update-projects.mjs"
       - ".github/workflows/update-projects.yml"
   workflow_dispatch:

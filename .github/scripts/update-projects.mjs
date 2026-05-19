@@ -15,7 +15,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { Buffer } from "node:buffer";
 
-const DATA = ".github/data/shipped.json";
+const DATA = ".github/data/projects.json";
 const COUNTS = ".github/data/counts.json";
 const README = "README.md";
 const ASSETS_DIR = ".github/assets/bricks";
@@ -27,13 +27,14 @@ const W = 130;
 const H = 160;
 const R = 14; // border radius
 
-// Status → colour palette + fill percentage. Purple-leaning palette to match
-// the site's accent: vibrant purple = shipped, softer lavender = active,
-// neutral gray = upcoming. The 3 fill levels (100/25/0) still carry the
-// primary information signal; colour just reinforces the brand voice.
+// Status → colour palette + fill percentage. Purple = shipped (brand accent),
+// red = active (warmth + urgency, sibling of purple on the warm side of the
+// spectrum so the two read as complementary not competing), gray = upcoming.
+// The 3 fill levels (100/25/0) still carry the primary information signal;
+// colour reinforces the brand voice.
 const STATUS = {
   shipped: { color: "#A371F7", fillPct: 100, label: "Shipped" },
-  active: { color: "#C8A2F8", fillPct: 25, label: "Active" },
+  active: { color: "#F85149", fillPct: 25, label: "Active" },
   upcoming: { color: "#7D8590", fillPct: 0, label: "Upcoming" },
 };
 
@@ -173,7 +174,7 @@ const projects = Array.isArray(data.projects) ? data.projects : [];
 
 // Write per-status counts to a flat file so shields.io can read them with a
 // simple JSONPath. shields.io's filter expressions are unreliable, and writing
-// derived data here keeps the schema in shipped.json clean (no _counts field).
+// derived data here keeps the schema in projects.json clean (no _counts field).
 // counts.json is intentionally NOT in update-projects.yml's `paths:` trigger
 // list — otherwise we'd loop (write counts → push → trigger → write counts).
 const counts = {
@@ -205,7 +206,7 @@ const bricks = rendered
   .map(({ project, slug }) => {
     const url = project.url || "#";
     // Cache-bust the SVG URL so GitHub's camo proxy fetches the new one
-    // whenever shipped.json changes (camo caches images for hours otherwise).
+    // whenever projects.json changes (camo caches images for hours otherwise).
     const src = `https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/${ASSETS_DIR}/${slug}.svg?v=${Date.now()}`;
     return `  <a href="${xml(url)}" title="${xml(project.name)}"><img src="${src}" alt="${xml(project.name)}" width="${W}" height="${H}" /></a>`;
   })

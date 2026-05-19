@@ -14,25 +14,25 @@
   <a href="https://yanukadeneth.com"><img src="https://img.shields.io/badge/Portfolio-A371F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
   <a href="https://ko-fi.com/yanukadeneth99"><img src="https://img.shields.io/badge/Support_on_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" /></a>
   &nbsp;<img src="https://img.shields.io/badge/%20-%7C%20-0d1117?style=for-the-badge" alt="|" />&nbsp;
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.shipped&label=Shipped&color=A371F7&style=for-the-badge&logo=check&logoColor=white" alt="Shipped" /></a>
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.active&label=Active&color=C8A2F8&style=for-the-badge&logo=hammer&logoColor=white" alt="Active" /></a>
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.upcoming&label=Upcoming&color=7D8590&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/projects.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.shipped&label=Shipped&color=A371F7&style=for-the-badge&logo=check&logoColor=white" alt="Shipped" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/projects.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.active&label=Active&color=F85149&style=for-the-badge&logo=hammer&logoColor=white" alt="Active" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/projects.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.upcoming&label=Upcoming&color=7D8590&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" /></a>
 </p>
 
 </div>
 
 ---
 
-<!-- LIVE: Projects list. Rendered from .github/data/shipped.json by
+<!-- LIVE: Projects list. Rendered from .github/data/projects.json by
      .github/workflows/update-projects.yml — edit the JSON, not the README. -->
 
 ### 🚀 Projects
 
 <!-- PROJECTS:START -->
 <p align="center">
-  <a href="https://cueclock.app" title="Cue Clock"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/cue-clock.svg?v=1779186709880" alt="Cue Clock" width="130" height="160" /></a>
-  <a href="https://streammonitor.app" title="Stream Monitor"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/stream-monitor.svg?v=1779186709880" alt="Stream Monitor" width="130" height="160" /></a>
-  <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779186709880" alt="AI Workflow 1" width="130" height="160" /></a>
+  <a href="https://cueclock.app" title="Cue Clock"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/cue-clock.svg?v=1779187922882" alt="Cue Clock" width="130" height="160" /></a>
+  <a href="https://streammonitor.app" title="Stream Monitor"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/stream-monitor.svg?v=1779187922883" alt="Stream Monitor" width="130" height="160" /></a>
+  <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779187922883" alt="AI Workflow 1" width="130" height="160" /></a>
 </p>
 <!-- PROJECTS:END -->
 
@@ -76,11 +76,7 @@
      clicking opens the actual post on X. -->
 
 <!-- XPOSTS:START -->
-<p>
-  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779187223585" alt="X post 2056199834722558071" width="540" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779187223585" alt="X post 2055873061065462139" width="540" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779187223585" alt="X post 2056233376223523223" width="540" /></a>
-</p>
+<p><em>Waiting for the next workflow run to populate this…</em></p>
 <!-- XPOSTS:END -->
 
 ---
@@ -91,7 +87,17 @@
   <a href="https://git.io/streak-stats">
     <img src="https://streak-stats.demolab.com?user=yanukadeneth99&theme=dark&background=0D1117&ring=A371F7&fire=A371F7&currStreakLabel=A371F7&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" height="180" />
   </a>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yanukadeneth99&theme=github_dark&title_color=A371F7" alt="Languages" height="180" />
+  <!-- Switched from github-profile-summary-cards (which has been intermittently
+       down since its Vercel migration) to github-readme-stats — the canonical,
+       well-maintained one. layout=donut keeps the visual chart-y. -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yanukadeneth99&layout=donut&theme=tokyonight&hide_border=true&title_color=A371F7&text_color=E6EDF3&bg_color=0D1117&icon_color=A371F7" alt="Top Languages" height="180" />
+</p>
+
+<!-- Contribution activity line chart — the "chart" that went missing when
+     profile-details was removed. Different shape from streak/languages, so it
+     adds new information rather than duplicating. -->
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yanukadeneth99&theme=react-dark&hide_border=true&color=A371F7&line=A371F7&point=ffffff&area=true&area_color=A371F7" alt="Contribution Activity" width="100%" />
 </p>
 
 <div align="center">
