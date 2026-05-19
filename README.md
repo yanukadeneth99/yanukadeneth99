@@ -58,7 +58,7 @@
              fetches the freshly-deployed promo-card variant instead of
              serving its cached pre-deploy copy. Bump the number whenever
              the widget needs a forced refresh. -->
-        <img width="420" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify?cb=1" alt="Spotify Now Playing" />
+        <img width="420" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify?cb=2" alt="Spotify Now Playing" />
       </a>
       <br/>
       <!-- Secondary CTA under Spotify widget, flat-square keeps it visually
@@ -92,19 +92,17 @@
 
 ### 📊 GitHub Stats
 
-<!-- Contribution activity line chart — month-wise aggregation, exactly what
-     was missing when the daily-grid pacman was removed.
-     full_history=true is critical: by default the graph only shows the last
-     year, which would render a flat line for new accounts. -->
+<!-- Self-hosted month-wise contribution chart. Renders from GraphQL
+     contributionsCollection via .github/scripts/update-stats.mjs — no
+     third-party service to go down. -->
 <p>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yanukadeneth99&theme=react-dark&hide_border=true&bg_color=0D1117&color=A371F7&line=A371F7&point=ffffff&area=true&area_color=A371F7&radius=12" alt="Monthly Contribution Activity" width="100%" />
+  <img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/contributions.svg" alt="Contributions per Month" width="100%" />
 </p>
 
-<!-- Top languages donut. cache_seconds=86400 cushions the github-readme-stats
-     Vercel cold start (it sleeps on the free tier). card_width pins a stable
-     dimension so a broken-image fallback still looks intentional. -->
+<!-- Self-hosted top languages donut. Aggregated from your repos' /languages
+     endpoint, so it stays accurate and never returns DEPLOYMENT_PAUSED. -->
 <p>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yanukadeneth99&layout=donut&theme=tokyonight&hide_border=true&title_color=A371F7&text_color=E6EDF3&bg_color=0D1117&icon_color=A371F7&langs_count=8&card_width=480&cache_seconds=86400" alt="Top Languages" width="480" />
+  <img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/languages.svg" alt="Top Languages" width="480" />
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=A371F7&height=80&section=footer" width="100%" alt="" />
