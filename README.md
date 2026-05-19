@@ -1,15 +1,21 @@
 <div align="center">
 
-<!-- Header capsule with purple accent baked into the gradient. capsule-render
+<!-- Hero capsule with purple accent baked into the gradient. capsule-render
      accepts a single `color=` hex (no #) which renders as a solid-to-dark
      gradient; the brand purple #A371F7 ties the banner to the rest of the
      accent system below. -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=A371F7&height=130&section=header&text=YASHURA&fontSize=64&fontColor=ffffff&fontAlignY=42&animation=fadeIn" width="100%" alt="Header" />
 
+<!-- Typing tagline — animated subtitle that re-writes itself. Color set to
+     the brand purple so it ties into the hero capsule and badge system. -->
+<a href="https://yanukadeneth.com">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=A371F7&center=true&vCenter=true&width=720&lines=I+build+what's+needed.;Films%2C+games%2C+music%2C+apps+%E2%80%94+stack+doesn't+matter.;The+problem+does.;Currently+shipping." alt="Typing tagline" />
+</a>
+
 <!-- Single row of badges. Left group = CTAs, right group = project counts.
-     All accent badges use purple #A371F7 to match the brand. Brand-bound
-     badges (Ko-fi, Spotify, X) keep their owner-platform colours. -->
-<p align="center">
+     All accent badges use purple; brand badges (Ko-fi, Spotify, X) keep
+     their owner-platform colours; Active is red to differentiate from Shipped. -->
+<p>
   <img src="https://komarev.com/ghpvc/?username=yanukadeneth99&style=for-the-badge&color=A371F7&label=VISITORS" alt="Visitors" />
   <a href="https://yanukadeneth.com"><img src="https://img.shields.io/badge/Portfolio-A371F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
   <a href="https://ko-fi.com/yanukadeneth99"><img src="https://img.shields.io/badge/Support_on_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" /></a>
@@ -19,12 +25,11 @@
   <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/projects.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.upcoming&label=Upcoming&color=7D8590&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" /></a>
 </p>
 
-</div>
+<hr/>
 
----
-
-<!-- LIVE: Projects list. Rendered from .github/data/projects.json by
-     .github/workflows/update-projects.yml — edit the JSON, not the README. -->
+<!-- LIVE: Projects bricks. Rendered from .github/data/projects.json by
+     .github/workflows/update-projects.yml — edit the JSON, not the README.
+     Section header inside the centered div so it centers naturally. -->
 
 ### 🚀 Projects
 
@@ -36,15 +41,10 @@
 </p>
 <!-- PROJECTS:END -->
 
----
+<hr/>
 
 ### 🎧 Right Now
 
-<!-- Heading is left-aligned (default markdown) like the others. The widget
-     pair below is centered as a unit using <div align="center"> wrapped
-     around the table only, so visual alignment of the row is preserved
-     without centering the section title. -->
-<div align="center">
 <table>
   <tr>
     <td align="center">
@@ -54,7 +54,11 @@
     </td>
     <td align="center">
       <a href="https://open.spotify.com/artist/4Yo79ck5nJ8Cplrf2DrKOG">
-        <img width="420" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify" alt="Spotify Now Playing" />
+        <!-- ?cb=1 is a one-time cache-buster so GitHub's camo image proxy
+             fetches the freshly-deployed promo-card variant instead of
+             serving its cached pre-deploy copy. Bump the number whenever
+             the widget needs a forced refresh. -->
+        <img width="420" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify?cb=1" alt="Spotify Now Playing" />
       </a>
       <br/>
       <!-- Secondary CTA under Spotify widget, flat-square keeps it visually
@@ -65,52 +69,43 @@
     </td>
   </tr>
 </table>
-</div>
 
----
+<hr/>
 
 ### 🐦 Top Posts on X
 
 <!-- LIVE: Top 3 X posts by engagement. Auto-updated hourly by
      .github/workflows/update-x-posts.yml. Each tweet is its own SVG so
-     clicking opens the actual post on X. -->
+     clicking opens the actual post on X. Width 100% so the cards span the
+     full content area on desktop; the underlying SVGs are now generated at
+     880px intrinsic width to keep text crisp at full display size. -->
 
 <!-- XPOSTS:START -->
 <p>
-  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779188226456" alt="X post 2056199834722558071" width="540" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779188226456" alt="X post 2055873061065462139" width="540" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779188226456" alt="X post 2056233376223523223" width="540" /></a>
+  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779188226456" width="100%" alt="X post 2056199834722558071" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779188226456" width="100%" alt="X post 2055873061065462139" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779188226456" width="100%" alt="X post 2056233376223523223" /></a>
 </p>
 <!-- XPOSTS:END -->
 
----
+<hr/>
 
 ### 📊 GitHub Stats
 
-<p align="center">
-  <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=yanukadeneth99&theme=dark&background=0D1117&ring=A371F7&fire=A371F7&currStreakLabel=A371F7&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" height="180" />
-  </a>
-  <!-- Switched from github-profile-summary-cards (which has been intermittently
-       down since its Vercel migration) to github-readme-stats — the canonical,
-       well-maintained one. layout=donut keeps the visual chart-y. -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yanukadeneth99&layout=donut&theme=tokyonight&hide_border=true&title_color=A371F7&text_color=E6EDF3&bg_color=0D1117&icon_color=A371F7" alt="Top Languages" height="180" />
+<!-- Contribution activity line chart — month-wise aggregation, exactly what
+     was missing when the daily-grid pacman was removed.
+     full_history=true is critical: by default the graph only shows the last
+     year, which would render a flat line for new accounts. -->
+<p>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yanukadeneth99&theme=react-dark&hide_border=true&bg_color=0D1117&color=A371F7&line=A371F7&point=ffffff&area=true&area_color=A371F7&radius=12" alt="Monthly Contribution Activity" width="100%" />
 </p>
 
-<!-- Contribution activity line chart — the "chart" that went missing when
-     profile-details was removed. Different shape from streak/languages, so it
-     adds new information rather than duplicating. -->
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yanukadeneth99&theme=react-dark&hide_border=true&color=A371F7&line=A371F7&point=ffffff&area=true&area_color=A371F7" alt="Contribution Activity" width="100%" />
+<!-- Top languages donut. cache_seconds=86400 cushions the github-readme-stats
+     Vercel cold start (it sleeps on the free tier). card_width pins a stable
+     dimension so a broken-image fallback still looks intentional. -->
+<p>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yanukadeneth99&layout=donut&theme=tokyonight&hide_border=true&title_color=A371F7&text_color=E6EDF3&bg_color=0D1117&icon_color=A371F7&langs_count=8&card_width=480&cache_seconds=86400" alt="Top Languages" width="480" />
 </p>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph.svg">
-</picture>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=A371F7&height=80&section=footer" width="100%" alt="" />
 

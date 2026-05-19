@@ -146,10 +146,10 @@ function colorizeLine(line, accent) {
     .join("");
 }
 
-// Card text area = 540 - 18*2 padding - 40 avatar - 14 gutter = 450px.
-// At 15px font ≈ 7.5px/char average → ~60 chars max. 56 gives safety margin
+// Card text area = 880 - 18*2 padding - 40 avatar - 14 gutter = 790px.
+// At 15px font ≈ 7.5px/char average → ~105 chars max. 95 gives safety margin
 // for wider glyphs (M, W, capitalized handles) without producing cramped lines.
-function wrapText(text, maxChars = 56) {
+function wrapText(text, maxChars = 95) {
   const words = text.replace(/\s+/g, " ").trim().split(" ");
   const lines = [];
   let cur = "";
@@ -207,7 +207,7 @@ const ICONS = {
 };
 
 const CARD = {
-  width: 540,
+  width: 880, // full-width target to fit the README content area on desktop
   paddingX: 18,
   paddingTop: 16,
   paddingBottom: 16,
@@ -312,7 +312,7 @@ if (written.length === 0) {
   const cards = written
     .map(
       ({ id }) =>
-        `  <a href="https://x.com/${username}/status/${id}"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/${ASSETS_DIR}/${id}.svg?v=${ts}" alt="X post ${id}" width="540" /></a>`,
+        `  <a href="https://x.com/${username}/status/${id}"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/${ASSETS_DIR}/${id}.svg?v=${ts}" alt="X post ${id}" width="100%" /></a>`,
     )
     .join("<br/><br/>\n");
   readmeBlock = `<p>\n${cards}\n</p>`;
