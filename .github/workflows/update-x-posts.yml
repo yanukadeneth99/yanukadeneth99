@@ -34,13 +34,12 @@ jobs:
         run: node .github/scripts/update-x-posts.mjs
 
       - name: Commit if changed
-        # Stage README.md, the generated SVG, and the avatar cache. Use
-        # `git diff --cached --quiet` so we don't push empty commits when
-        # nothing actually changed (most hours).
+        # Stage README.md, the per-tweet SVG directory, and the avatar cache.
+        # `--all` on the bricks dir captures deletions (when ranking shifts).
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md .github/assets/x-posts.svg .github/data/x-cache.json
+          git add --all README.md .github/assets/x-posts/ .github/data/x-cache.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

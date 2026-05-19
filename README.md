@@ -1,37 +1,25 @@
 <div align="center">
 
-<!-- Compact header capsule: height 130 (was 200), title-only, no subtitle.
-     Saves ~70vh of vertical space so the live widgets are visible above the
-     fold for most laptop viewports. -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=130&section=header&text=YASHURA&fontSize=64&fontColor=ffffff&fontAlignY=42&animation=fadeIn" width="100%" alt="Header" />
+<!-- Header capsule with purple accent baked into the gradient. capsule-render
+     accepts a single `color=` hex (no #) which renders as a solid-to-dark
+     gradient; the brand purple #A371F7 ties the banner to the rest of the
+     accent system below. -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=A371F7&height=130&section=header&text=YASHURA&fontSize=64&fontColor=ffffff&fontAlignY=42&animation=fadeIn" width="100%" alt="Header" />
 
-<!-- Single row of badges. Left group = CTAs (visitors/portfolio/ko-fi),
-     right group = project status counts (shipped/active/upcoming). The
-     non-breaking-space pipe acts as a visual divider — GitHub strips CSS
-     so we use a literal character rather than a styled border. Project
-     counts read from counts.json (written by update-projects script). -->
+<!-- Single row of badges. Left group = CTAs, right group = project counts.
+     All accent badges use purple #A371F7 to match the brand. Brand-bound
+     badges (Ko-fi, Spotify, X) keep their owner-platform colours. -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yanukadeneth99&style=for-the-badge&color=2f81f7&label=VISITORS" alt="Visitors" />
-  <a href="https://yanukadeneth.com"><img src="https://img.shields.io/badge/Portfolio-2f81f7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <img src="https://komarev.com/ghpvc/?username=yanukadeneth99&style=for-the-badge&color=A371F7&label=VISITORS" alt="Visitors" />
+  <a href="https://yanukadeneth.com"><img src="https://img.shields.io/badge/Portfolio-A371F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
   <a href="https://ko-fi.com/yanukadeneth99"><img src="https://img.shields.io/badge/Support_on_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" /></a>
   &nbsp;<img src="https://img.shields.io/badge/%20-%7C%20-0d1117?style=for-the-badge" alt="|" />&nbsp;
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.shipped&label=Shipped&color=3FB950&style=for-the-badge&logo=check&logoColor=white" alt="Shipped" /></a>
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.active&label=Active&color=D29922&style=for-the-badge&logo=hammer&logoColor=white" alt="Active" /></a>
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.upcoming&label=Upcoming&color=8B949E&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.shipped&label=Shipped&color=A371F7&style=for-the-badge&logo=check&logoColor=white" alt="Shipped" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.active&label=Active&color=C8A2F8&style=for-the-badge&logo=hammer&logoColor=white" alt="Active" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.upcoming&label=Upcoming&color=7D8590&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" /></a>
 </p>
 
 </div>
-
----
-
-<!-- LIVE: Currently building. Auto-updated every 6h by
-     .github/workflows/update-building.yml. Edit the markers, not the content. -->
-
-### 🛠 Currently Building
-
-<!-- BUILDING:START -->
-> 🌱 _Quiet on the public side right now — probably deep in a private repo._
-<!-- BUILDING:END -->
 
 ---
 
@@ -42,73 +30,67 @@
 
 <!-- PROJECTS:START -->
 <p align="center">
-  <a href="https://cueclock.app" title="Cue Clock"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/cue-clock.svg?v=1779185197567" alt="Cue Clock" width="130" height="160" /></a>
-  <a href="https://streammonitor.app" title="Stream Monitor"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/stream-monitor.svg?v=1779185197567" alt="Stream Monitor" width="130" height="160" /></a>
-  <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779185197567" alt="AI Workflow 1" width="130" height="160" /></a>
+  <a href="https://cueclock.app" title="Cue Clock"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/cue-clock.svg?v=1779186457755" alt="Cue Clock" width="130" height="160" /></a>
+  <a href="https://streammonitor.app" title="Stream Monitor"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/stream-monitor.svg?v=1779186457755" alt="Stream Monitor" width="130" height="160" /></a>
+  <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779186457755" alt="AI Workflow 1" width="130" height="160" /></a>
 </p>
 <!-- PROJECTS:END -->
 
 ---
 
-<!-- LIVE: Discord presence + Spotify now-playing, side by side.
-     A markdown table forces them onto one row regardless of viewport width.
-     Replace YOUR_DISCORD_ID and YOUR_SPOTIFY_UID — see setup notes below. -->
+### 🎧 Right Now
 
-<!-- Centered H3: markdown headings default to left-aligned because they live
-     in document flow, not in a centered container. Inline <h3 align="center">
-     overrides that for just this heading without affecting siblings. -->
-<h3 align="center">🎧 Right Now</h3>
-
-<!-- width="100%" on the table forces it to span the full content area; the
-     same attribute on each <img> makes the SVG widgets stretch to fill their
-     cells while keeping aspect ratio (both are viewBox-based, so they scale
-     cleanly). This eliminates the wasted side gutters. -->
-<table width="100%">
+<!-- Heading is left-aligned (default markdown) like the others. The widget
+     pair below is centered as a unit using <div align="center"> wrapped
+     around the table only, so visual alignment of the row is preserved
+     without centering the section title. -->
+<div align="center">
+<table>
   <tr>
-    <td align="center" width="50%">
+    <td align="center">
       <a href="https://discord.com/users/660852074644373505">
-        <img width="100%" src="https://lanyard.cnrad.dev/api/660852074644373505?bg=0d1117&theme=dark&borderRadius=12px&fallbackStatusText=Chilling..&hideDiscrim=true" alt="Discord Presence" />
+        <img width="420" src="https://lanyard.cnrad.dev/api/660852074644373505?bg=0d1117&theme=dark&borderRadius=12px&fallbackStatusText=Chilling..&hideDiscrim=true" alt="Discord Presence" />
       </a>
     </td>
-    <td align="center" width="50%">
+    <td align="center">
       <a href="https://open.spotify.com/artist/4Yo79ck5nJ8Cplrf2DrKOG">
-        <img width="100%" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify" alt="Spotify Now Playing" />
+        <img width="420" src="https://hhzluaxzb4smr2jmra.vercel.app/api/spotify" alt="Spotify Now Playing" />
+      </a>
+      <br/>
+      <!-- Secondary CTA under Spotify widget, flat-square keeps it visually
+           subordinate to the top-row badges. -->
+      <a href="https://open.spotify.com/artist/4Yo79ck5nJ8Cplrf2DrKOG">
+        <img src="https://img.shields.io/badge/%E2%96%B6%20Listen%20on%20Spotify-1DB954?style=flat-square&logo=spotify&logoColor=white" alt="Listen on Spotify" />
       </a>
     </td>
   </tr>
 </table>
+</div>
 
 ---
-
-<!-- LIVE: Top 3 X posts by engagement. Auto-updated weekly by
-     .github/workflows/update-x-posts.yml. -->
 
 ### 🐦 Top Posts on X
 
+<!-- LIVE: Top 3 X posts by engagement. Auto-updated hourly by
+     .github/workflows/update-x-posts.yml. Each tweet is its own SVG so
+     clicking opens the actual post on X. -->
+
 <!-- XPOSTS:START -->
-<p align="center">
-  <a href="https://x.com/yanukadeneth99"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts.svg?v=1779185565534" alt="Top X Posts" width="760" /></a>
-</p>
+<p><em>Waiting for the next workflow run to populate this…</em></p>
 <!-- XPOSTS:END -->
 
-<p align="center">
-  <a href="https://x.com/yanukadeneth99">
-    <img src="https://img.shields.io/badge/Follow-000000?style=for-the-badge&logo=x&logoColor=white" alt="Follow on X" />
-  </a>
-</p>
-
 ---
-
-<div align="center">
 
 ### 📊 GitHub Stats
 
 <p align="center">
   <a href="https://git.io/streak-stats">
-    <img src="https://streak-stats.demolab.com?user=yanukadeneth99&theme=dark&background=0D1117&ring=2f81f7&fire=2f81f7&currStreakLabel=2f81f7&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" height="180" />
+    <img src="https://streak-stats.demolab.com?user=yanukadeneth99&theme=dark&background=0D1117&ring=A371F7&fire=A371F7&currStreakLabel=A371F7&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" height="180" />
   </a>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yanukadeneth99&theme=github_dark&title_color=2f81f7" alt="Languages" height="180" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yanukadeneth99&theme=github_dark&title_color=A371F7" alt="Languages" height="180" />
 </p>
+
+<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph-dark.svg">
@@ -116,6 +98,6 @@
   <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph.svg">
 </picture>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=80&section=footer" width="100%" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=A371F7&height=80&section=footer" width="100%" alt="" />
 
 </div>

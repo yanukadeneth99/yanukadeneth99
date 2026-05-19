@@ -27,12 +27,14 @@ const W = 130;
 const H = 160;
 const R = 14; // border radius
 
-// Status → colour palette + fill percentage. GitHub status conventions for
-// instant intuition: green=done, amber=in-progress, slate=not-started.
+// Status → colour palette + fill percentage. Purple-leaning palette to match
+// the site's accent: vibrant purple = shipped, softer lavender = active,
+// neutral gray = upcoming. The 3 fill levels (100/25/0) still carry the
+// primary information signal; colour just reinforces the brand voice.
 const STATUS = {
-  shipped: { color: "#3FB950", fillPct: 100, label: "Shipped" },
-  active: { color: "#D29922", fillPct: 25, label: "Active" },
-  upcoming: { color: "#8B949E", fillPct: 0, label: "Upcoming" },
+  shipped: { color: "#A371F7", fillPct: 100, label: "Shipped" },
+  active: { color: "#C8A2F8", fillPct: 25, label: "Active" },
+  upcoming: { color: "#7D8590", fillPct: 0, label: "Upcoming" },
 };
 
 // ─── Helpers ────────────────────────────────────────────────────────────────

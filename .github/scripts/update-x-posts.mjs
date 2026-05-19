@@ -1,32 +1,24 @@
-// Generates a single SVG of the top 3 X posts as modern X-style tweet cards
-// (dark theme, real avatar, engagement icons), writes it to
-// .github/assets/x-posts.svg, and points the README XPOSTS block at it.
-//
-// Why an SVG instead of markdown blockquotes?
-//  - GitHub strips inline <svg> and most CSS — only <img src="...svg"> works.
-//  - One image = zero broken-image flicker, identical rendering across themes,
-//    and total pixel control (font weights, colours, icon paths).
+// Generates ONE SVG per top tweet at .github/assets/x-posts/<id>.svg, then
+// writes a README block with three <a href="tweet-url"><img></a> blocks so
+// each card is individually clickable. (GitHub strips <a> tags inside SVGs
+// served as <img>, so per-region linking only works via separate files.)
 //
 // Cost model:
 //  - Tweets endpoint: 50 posts × $0.001, hourly, dedup'd within 24h → ~$1.50/mo
-//  - User endpoint (for avatar): cached 7 days → ~$0.004/mo
-//
-// Requires env: X_BEARER_TOKEN, X_USER_ID
+//  - User endpoint (avatar): cached 7 days → ~$0.004/mo
 
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, readdir, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { Buffer } from "node:buffer";
 
 const BEARER = process.env.X_BEARER_TOKEN;
 const USER_ID = process.env.X_USER_ID;
 const README = "README.md";
-const SVG_PATH = ".github/assets/x-posts.svg";
+const ASSETS_DIR = ".github/assets/x-posts";
 const CACHE_PATH = ".github/data/x-cache.json";
 const START = "<!-- XPOSTS:START -->";
 const END = "<!-- XPOSTS:END -->";
 
-// 7-day cache for the avatar — refreshes occasionally without burning $0.001
-// per workflow run on what's effectively static data.
 const AVATAR_TTL_MS = 7 * 24 * 60 * 60 * 1000;
 
 if (!BEARER || !USER_ID) {
@@ -67,12 +59,10 @@ async function getProfile() {
   );
   if (!res.ok) {
     console.warn(`User lookup ${res.status}: ${await res.text()}`);
-    return cache; // fall back to stale cache rather than failing the whole run
+    return cache;
   }
   const { data } = await res.json();
 
-  // X returns a _normal (48x48) sized image by default; strip the suffix for
-  // the original-resolution version which renders cleanly at 40px display.
   const imgUrl = (data.profile_image_url || "").replace("_normal", "");
   let avatar = cache?.avatar || null;
   if (imgUrl) {
@@ -138,8 +128,7 @@ function xml(s) {
     .replace(/'/g, "&apos;");
 }
 
-// SVG <text> doesn't wrap; precompute breaks at ~78 chars (≈ 7.6px/char at 15px).
-function wrapText(text, maxChars = 78) {
+function wrapText(text, maxChars = 70) {
   const words = text.replace(/\s+/g, " ").trim().split(" ");
   const lines = [];
   let cur = "";
@@ -155,7 +144,6 @@ function wrapText(text, maxChars = 78) {
     }
   }
   if (cur) lines.push(cur);
-  // Cap at 4 lines so super-long tweets don't make giant cards.
   if (lines.length > 4) {
     lines.length = 4;
     lines[3] = lines[3].replace(/\s+\S*$/, "") + "…";
@@ -180,14 +168,17 @@ function fmtCount(n) {
 
 // ─── SVG building ───────────────────────────────────────────────────────────
 
+// Card uses X's native dark palette so it reads as a tweet, but the avatar
+// fallback ring picks up the site's purple accent — the colour story ties
+// back to the brand even when the real avatar fails to load.
 const COLOR = {
   bg: "#000000",
   text: "#E7E9EA",
   muted: "#71767B",
   separator: "rgba(255,255,255,0.12)",
+  accent: "#A371F7", // site purple
 };
 
-// Compact 18px icons — recognizable not pixel-perfect.
 const ICONS = {
   reply: `<path d="M3 4.5C3 3.12 4.12 2 5.5 2h7C13.88 2 15 3.12 15 4.5v6c0 1.38-1.12 2.5-2.5 2.5H9.5L6 16v-3H5.5C4.12 13 3 11.88 3 10.5v-6z"/>`,
   retweet: `<path d="M5 4h7v2H6.5l1 1L6 8.5 3 6l3-2.5L7 4.5 5 4zm8 10H6v-2h7l-1-1 1.5-1.5L17 12l-3 2.5-1-1L13 14z"/>`,
@@ -195,31 +186,29 @@ const ICONS = {
 };
 
 const CARD = {
-  width: 760,
+  width: 540,
   paddingX: 18,
   paddingTop: 16,
   paddingBottom: 16,
   avatarSize: 40,
   avatarGutter: 14,
-  headerBaseline: 32,
   bodyLineHeight: 20,
-  bodyTopGap: 22, // gap from header baseline to first body line top
+  bodyTopGap: 22,
   engagementTopGap: 16,
   engagementHeight: 18,
 };
 
-function renderCard(tweet, profile, idx, yOffset) {
+function tweetSvg(tweet, profile, idx) {
   const lines = wrapText(tweet.text);
-  const bodyHeight = lines.length * CARD.bodyLineHeight;
 
   const contentX = CARD.paddingX + CARD.avatarSize + CARD.avatarGutter;
-  const headerY = CARD.paddingTop + CARD.headerBaseline - 12; // baseline-ish
+  const headerY = CARD.paddingTop + 20;
   const bodyStartY = headerY + CARD.bodyTopGap;
   const engagementY = bodyStartY + (lines.length - 1) * CARD.bodyLineHeight + CARD.engagementTopGap;
   const cardHeight = engagementY + CARD.engagementHeight + CARD.paddingBottom;
 
   const handle = `@${profile.username || "yanukadeneth99"}`;
-  const name = profile.name || "Yanuka";
+  const name = profile.name || "YASHURA";
   const time = relTime(tweet.created_at);
 
   const cx = CARD.paddingX + CARD.avatarSize / 2;
@@ -228,7 +217,7 @@ function renderCard(tweet, profile, idx, yOffset) {
   const avatar = profile.avatar
     ? `<clipPath id="${avatarClipId}"><circle cx="${cx}" cy="${cy}" r="${CARD.avatarSize / 2}"/></clipPath>
        <image href="${profile.avatar}" x="${CARD.paddingX}" y="${CARD.paddingTop}" width="${CARD.avatarSize}" height="${CARD.avatarSize}" clip-path="url(#${avatarClipId})" preserveAspectRatio="xMidYMid slice"/>`
-    : `<circle cx="${cx}" cy="${cy}" r="${CARD.avatarSize / 2}" fill="#1d9bf0"/>
+    : `<circle cx="${cx}" cy="${cy}" r="${CARD.avatarSize / 2}" fill="${COLOR.accent}"/>
        <text x="${cx}" y="${cy + 6}" font-size="18" font-weight="700" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Y</text>`;
 
   const header = `<text x="${contentX}" y="${headerY}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15">
@@ -244,69 +233,68 @@ function renderCard(tweet, profile, idx, yOffset) {
     .join("");
   const body = `<text x="${contentX}" y="${bodyStartY}" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" fill="${COLOR.text}">${bodyTspans}</text>`;
 
-  // Engagement row: reply / retweet / like, 110px stride between groups.
-  const eg = [
+  const engagement = [
     { icon: ICONS.reply, count: fmtCount(tweet.replies) },
     { icon: ICONS.retweet, count: fmtCount(tweet.retweets) },
     { icon: ICONS.like, count: fmtCount(tweet.likes) },
   ]
     .map(({ icon, count }, i) => {
-      const gx = contentX + i * 110;
+      const gx = contentX + i * 100;
       return `<g transform="translate(${gx}, ${engagementY})" fill="${COLOR.muted}">
         ${icon}
-        <text x="26" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="${COLOR.muted}">${xml(count)}</text>
+        <text x="26" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="${COLOR.muted}">${xml(count)}</text>
       </g>`;
     })
     .join("");
 
-  const separator = `<line x1="0" y1="${cardHeight}" x2="${CARD.width}" y2="${cardHeight}" stroke="${COLOR.separator}" stroke-width="1"/>`;
-
-  return {
-    height: cardHeight,
-    svg: `<g transform="translate(0, ${yOffset})">
-      ${avatar}
-      ${header}
-      ${body}
-      ${eg}
-      ${separator}
-    </g>`,
-  };
-}
-
-function renderSvg(tweets, profile) {
-  let y = 0;
-  const parts = tweets.map((t, i) => {
-    const c = renderCard(t, profile, i, y);
-    y += c.height;
-    return c.svg;
-  });
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD.width}" height="${y}" viewBox="0 0 ${CARD.width} ${y}" role="img" aria-label="Top X Posts">
-  <rect width="${CARD.width}" height="${y}" fill="${COLOR.bg}"/>
-  ${parts.join("\n")}
-</svg>`;
-}
-
-function renderEmptySvg() {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD.width}" height="100" viewBox="0 0 ${CARD.width} 100" role="img" aria-label="Top X Posts">
-  <rect width="${CARD.width}" height="100" fill="${COLOR.bg}"/>
-  <text x="${CARD.width / 2}" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="${COLOR.muted}" text-anchor="middle">No recent posts.</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${CARD.width}" height="${cardHeight}" viewBox="0 0 ${CARD.width} ${cardHeight}" role="img" aria-label="${xml(name)} on X">
+  <rect width="${CARD.width}" height="${cardHeight}" fill="${COLOR.bg}" rx="14"/>
+  <rect x="0.5" y="0.5" width="${CARD.width - 1}" height="${cardHeight - 1}" fill="none" stroke="${COLOR.separator}" stroke-width="1" rx="14"/>
+  ${avatar}
+  ${header}
+  ${body}
+  ${engagement}
 </svg>`;
 }
 
 // ─── Main ──────────────────────────────────────────────────────────────────
 
 const [profile, tweets] = await Promise.all([getProfile(), getTopTweets()]);
-const svg = tweets.length > 0 ? renderSvg(tweets, profile || {}) : renderEmptySvg();
 
-await mkdir(".github/assets", { recursive: true });
-await writeFile(SVG_PATH, svg);
-console.log(`Wrote ${SVG_PATH} (${svg.length} bytes, ${tweets.length} tweets).`);
+await mkdir(ASSETS_DIR, { recursive: true });
 
-// Cache-bust the SVG URL so GitHub's camo image proxy fetches the fresh
-// version instead of serving the cached one (camo caches hours).
-const readmeBlock = `<p align="center">
-  <a href="https://x.com/${profile?.username || "yanukadeneth99"}"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts.svg?v=${Date.now()}" alt="Top X Posts" width="760" /></a>
-</p>`;
+// Wipe stale SVGs from previous runs so we don't accumulate old tweet files
+// after the top-3 ranking shifts. The directory stays trivially small.
+for (const f of await readdir(ASSETS_DIR)) {
+  if (f.endsWith(".svg")) await rm(`${ASSETS_DIR}/${f}`);
+}
+
+const written = [];
+for (let i = 0; i < tweets.length; i++) {
+  const t = tweets[i];
+  const svg = tweetSvg(t, profile || {}, i);
+  const path = `${ASSETS_DIR}/${t.id}.svg`;
+  await writeFile(path, svg);
+  written.push({ id: t.id, path });
+}
+console.log(`Wrote ${written.length} tweet SVG(s).`);
+
+// README block: three <a><img></a> blocks stacked vertically, each linking
+// to its tweet permalink so clicking opens the actual post.
+const username = profile?.username || "yanukadeneth99";
+const ts = Date.now(); // cache-buster for GitHub's camo image proxy
+let readmeBlock;
+if (written.length === 0) {
+  readmeBlock = `<p><em>No recent posts.</em></p>`;
+} else {
+  const cards = written
+    .map(
+      ({ id }) =>
+        `  <a href="https://x.com/${username}/status/${id}"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/${ASSETS_DIR}/${id}.svg?v=${ts}" alt="X post ${id}" width="540" /></a>`,
+    )
+    .join("<br/><br/>\n");
+  readmeBlock = `<p>\n${cards}\n</p>`;
+}
 
 const current = await readFile(README, "utf8");
 const pattern = new RegExp(`${START}[\\s\\S]*?${END}`);
