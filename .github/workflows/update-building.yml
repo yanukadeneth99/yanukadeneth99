@@ -1,0 +1,44 @@
+name: Update "Currently Building"
+
+# Runs frequently so the README reflects recent activity, but not so often that
+# we waste Actions minutes. Every 6 hours is the sweet spot for a profile README.
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/update-building.mjs"
+      - ".github/workflows/update-building.yml"
+
+permissions:
+  contents: write # required to commit README changes
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run updater
+        env:
+          # GITHUB_TOKEN raises the unauthenticated 60/hr ceiling to 5000/hr.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # repository_owner is set by GitHub, not user input — safe to expose as env.
+          GH_USER: ${{ github.repository_owner }}
+        run: node .github/scripts/update-building.mjs
+
+      - name: Commit if changed
+        run: |
+          # Only commit when there is a diff to avoid empty noise commits.
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: refresh currently-building block"
+            git push
+          else
+            echo "No README changes."
+          fi

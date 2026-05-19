@@ -1,0 +1,43 @@
+name: Update Top 3 X Posts
+
+# Hourly cadence. X dedups identical post IDs within a 24h window, so even
+# at 24 runs/day the actual billed posts ≈ unique posts in your window
+# (~50/day) × $0.001 = ~$1.50/mo. The README only commits when ranking
+# actually changes, so most hours produce zero noise.
+#
+# GitHub scheduled workflows can drift 5–15 min under load; that's fine for
+# hourly cadence because the underlying X data also doesn't change minute-to-minute.
+on:
+  schedule:
+    - cron: "0 * * * *" # every hour, on the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run updater
+        env:
+          # Secrets are not user input — safe to surface via env block.
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          X_USER_ID: ${{ secrets.X_USER_ID }}
+        run: node .github/scripts/update-x-posts.mjs
+
+      - name: Commit if changed
+        run: |
+          # Skip empty commits — README only changes when ranking/content shifts.
+          if [[ -n "$(git status --porcelain README.md)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: refresh top X posts"
+            git push
+          else
+            echo "No README changes."
+          fi

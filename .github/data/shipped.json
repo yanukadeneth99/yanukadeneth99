@@ -1,0 +1,17 @@
+{
+  "year": 2026,
+  "shipped": [
+    {
+      "name": "Example: Shipped Project",
+      "url": "https://github.com/yanukadeneth99/example",
+      "date": "2026-01-15",
+      "note": "Replace these examples with real things you've shipped."
+    }
+  ],
+  "upcoming": [
+    {
+      "name": "Example: Upcoming Project",
+      "note": "Replace with what you're planning."
+    }
+  ]
+}
