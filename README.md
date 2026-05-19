@@ -12,17 +12,12 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=A371F7&center=true&vCenter=true&width=720&lines=I+build+what's+needed.;Films%2C+games%2C+music%2C+apps+%E2%80%94+stack+doesn't+matter.;The+problem+does.;Currently+shipping." alt="Typing tagline" />
 </a>
 
-<!-- Single row of badges. Left group = CTAs, right group = project counts.
-     All accent badges use purple; brand badges (Ko-fi, Spotify, X) keep
-     their owner-platform colours; Active is red to differentiate from Shipped. -->
+<!-- Single row of badges. Counts moved out (now shown visually inside each
+     project brick); Ko-fi promoted into its own Support section below the
+     Projects grid for a stronger, dedicated CTA. -->
 <p>
   <img src="https://komarev.com/ghpvc/?username=yanukadeneth99&style=for-the-badge&color=A371F7&label=VISITORS" alt="Visitors" />
   <a href="https://yanukadeneth.com"><img src="https://img.shields.io/badge/Portfolio-A371F7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://ko-fi.com/yanukadeneth99"><img src="https://img.shields.io/badge/Support_on_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" /></a>
-  &nbsp;<img src="https://img.shields.io/badge/%20-%7C%20-0d1117?style=for-the-badge" alt="|" />&nbsp;
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/projects.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.shipped&label=Shipped&color=A371F7&style=for-the-badge&logo=check&logoColor=white" alt="Shipped" /></a>
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/projects.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.active&label=Active&color=F85149&style=for-the-badge&logo=hammer&logoColor=white" alt="Active" /></a>
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/projects.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.upcoming&label=Upcoming&color=7D8590&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" /></a>
 </p>
 
 <hr/>
@@ -40,6 +35,22 @@
   <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779188146765" alt="AI Workflow 1" width="130" height="160" /></a>
 </p>
 <!-- PROJECTS:END -->
+
+<!-- Support / donate block — dedicated CTA section.
+     Pattern (context → button → thanks line) mirrors the Cue Clock README
+     because "why" before the button converts better than a bare badge.
+     `logoWidth=40` pushes the Ko-fi cup glyph larger so the button reads
+     as a primary action, not a metadata chip. -->
+<br/>
+
+<p><em>Everything I build is <strong>free, open-source, and ad-free</strong> — and I plan to keep it that way.<br/>
+If something here helped you, a coffee keeps the lights on. 🙏</em></p>
+
+<p>
+  <a href="https://ko-fi.com/yanukadeneth99">
+    <img src="https://img.shields.io/badge/%E2%98%95%20Support%20me%20on%20Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white&logoWidth=40" alt="Support me on Ko-fi" height="44" />
+  </a>
+</p>
 
 <hr/>
 
