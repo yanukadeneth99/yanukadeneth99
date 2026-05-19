@@ -1,15 +1,13 @@
 name: Update Top 3 X Posts
 
-# Hourly cadence. X dedups identical post IDs within a 24h window, so even
-# at 24 runs/day the actual billed posts ≈ unique posts in your window
-# (~50/day) × $0.001 = ~$1.50/mo. The README only commits when ranking
-# actually changes, so most hours produce zero noise.
-#
-# GitHub scheduled workflows can drift 5–15 min under load; that's fine for
-# hourly cadence because the underlying X data also doesn't change minute-to-minute.
+# Daily cadence. Engagement on the top-3 posts barely shifts hour to hour,
+# and X charges $0.001 per post returned — once daily × 50 posts × $0.001
+# = ~$0.05/mo instead of ~$1.50/mo at hourly. Same data freshness for the
+# README (people check profiles rarely enough that "today's top 3" is
+# always the right answer).
 on:
   schedule:
-    - cron: "0 * * * *" # every hour, on the hour
+    - cron: "0 6 * * *" # 06:00 UTC daily
   workflow_dispatch:
 
 permissions:

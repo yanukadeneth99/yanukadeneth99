@@ -74,17 +74,17 @@
 
 ### 🐦 Top Posts on X
 
-<!-- LIVE: Top 3 X posts by engagement. Auto-updated hourly by
+<!-- LIVE: Top 3 X posts by engagement. Auto-updated daily by
      .github/workflows/update-x-posts.yml. Each tweet is its own SVG so
-     clicking opens the actual post on X. Width 100% so the cards span the
-     full content area on desktop; the underlying SVGs are now generated at
-     880px intrinsic width to keep text crisp at full display size. -->
+     clicking opens the actual post on X. width="880" (not 100%) so the
+     SVG renders at its native CSS-pixel size — text stays at the intended
+     15px regardless of how wide the viewer's screen is. -->
 
 <!-- XPOSTS:START -->
 <p>
-  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779192347989" alt="X post 2056199834722558071" width="100%" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779192347989" alt="X post 2055873061065462139" width="100%" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779192347989" alt="X post 2056233376223523223" width="100%" /></a>
+  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779188226456" width="880" alt="X post 2056199834722558071" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779188226456" width="880" alt="X post 2055873061065462139" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779188226456" width="880" alt="X post 2056233376223523223" /></a>
 </p>
 <!-- XPOSTS:END -->
 

@@ -312,7 +312,12 @@ if (written.length === 0) {
   const cards = written
     .map(
       ({ id }) =>
-        `  <a href="https://x.com/${username}/status/${id}"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/${ASSETS_DIR}/${id}.svg?v=${ts}" alt="X post ${id}" width="100%" /></a>`,
+        // width="880" (not 100%) so the SVG renders at its native CSS-pixel
+        // size — keeps text at the intended 15px regardless of how wide the
+        // viewer's screen is. On narrower screens the parent <p> with overflow
+        // handles itself; on wider screens we stay at the designed width
+        // rather than upscaling.
+        `  <a href="https://x.com/${username}/status/${id}"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/${ASSETS_DIR}/${id}.svg?v=${ts}" alt="X post ${id}" width="880" /></a>`,
     )
     .join("<br/><br/>\n");
   readmeBlock = `<p>\n${cards}\n</p>`;
