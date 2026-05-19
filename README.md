@@ -82,9 +82,9 @@
 
 <!-- XPOSTS:START -->
 <p>
-  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779188226456" width="100%" alt="X post 2056199834722558071" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779188226456" width="100%" alt="X post 2055873061065462139" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779188226456" width="100%" alt="X post 2056233376223523223" /></a>
+  <a href="https://x.com/yanukadeneth99/status/2056199834722558071"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056199834722558071.svg?v=1779192347989" alt="X post 2056199834722558071" width="100%" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2055873061065462139"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2055873061065462139.svg?v=1779192347989" alt="X post 2055873061065462139" width="100%" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2056233376223523223"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2056233376223523223.svg?v=1779192347989" alt="X post 2056233376223523223" width="100%" /></a>
 </p>
 <!-- XPOSTS:END -->
 
