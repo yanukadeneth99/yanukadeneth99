@@ -56,9 +56,13 @@
 ### 🚀 Projects
 
 <!-- PROJECTS:START -->
+**Shipped in 2026**
 
-_Run the "Update Projects Section" workflow once to populate this._
+- ✅ [**Example: Shipped Project**](https://github.com/yanukadeneth99/example) · `2026-01-15` — Replace these examples with real things you've shipped.
 
+**Upcoming**
+
+- 🔜 **Example: Upcoming Project** — Replace with what you're planning.
 <!-- PROJECTS:END -->
 
 ---
