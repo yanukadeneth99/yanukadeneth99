@@ -96,9 +96,21 @@ _Run the "Update Projects Section" workflow once to populate this._
 ### 🐦 Top Posts on X
 
 <!-- XPOSTS:START -->
-
-> _Waiting for the first workflow run to populate this..._
-
+> @IGN Genuine question. How do you enjoy Forza? Not trying to rage bait or be stupid. I'm a person who loves story heavy games and was wondering why and how people enjoy this game enough to rate 10 and have global impact.  
+> 
+> [❤️ 7 · 🔁 0 · 💬 4](https://x.com/i/web/status/2056199834722558071)
+>
+> ---
+>
+> @Rainmaker1973 @grok is this factually true? In the video the lecturer explains that purple is caused in the mix of red and blue due to the absence of green and that purple photons do not exist.  
+> 
+> [❤️ 4 · 🔁 1 · 💬 5](https://x.com/i/web/status/2055873061065462139)
+>
+> ---
+>
+> @PersoEa @IGN I doubt that's true to be honest. Games are a form of an entertainment and so are movies. It's weird to say people who like one kind of entertainment don't like the other no? @grok based on general research, do people who play  
+> 
+> [❤️ 1 · 🔁 0 · 💬 2](https://x.com/i/web/status/2056233376223523223)
 <!-- XPOSTS:END -->
 
 <p align="center">
