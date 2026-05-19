@@ -66,12 +66,33 @@ function initial(name) {
   return m ? m[0].toUpperCase() : "•";
 }
 
-async function fetchAsDataUri(url) {
-  // Best-effort fetch — if it fails (network, 404, CORS-y), we return null
-  // and the caller falls back to the monogram. We never block the build on
-  // a missing logo.
+// Map common image extensions to MIME types for the local-file branch.
+// Used so the data: URI gets the right content-type without a HEAD request.
+const EXT_MIME = {
+  png: "image/png",
+  jpg: "image/jpeg",
+  jpeg: "image/jpeg",
+  gif: "image/gif",
+  svg: "image/svg+xml",
+  webp: "image/webp",
+};
+
+async function fetchAsDataUri(src) {
+  // Best-effort load — supports both remote URLs and local repo paths so
+  // newly-added logos work in the same commit (before they're pushed and
+  // available via raw.githubusercontent.com). On any failure we return null
+  // and the caller falls back to the monogram; never block the build.
   try {
-    const r = await fetch(url, { headers: { "User-Agent": "yanukadeneth99-brick-bot" } });
+    // Local path branch: anything that isn't http(s) is treated as a path
+    // relative to the repo root (e.g. "images/cueclock.png").
+    if (!/^https?:\/\//i.test(src)) {
+      if (!existsSync(src)) return null;
+      const buf = await readFile(src);
+      const ext = src.split(".").pop().toLowerCase();
+      const mime = EXT_MIME[ext] || "application/octet-stream";
+      return `data:${mime};base64,${buf.toString("base64")}`;
+    }
+    const r = await fetch(src, { headers: { "User-Agent": "yanukadeneth99-brick-bot" } });
     if (!r.ok) return null;
     const mime = r.headers.get("content-type") || "image/png";
     const buf = Buffer.from(await r.arrayBuffer());

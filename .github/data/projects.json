@@ -2,7 +2,7 @@
   "year": 2026,
   "_schema": {
     "status": "one of: shipped | active | upcoming",
-    "logo": "optional URL (PNG/SVG/JPG); falls back to colored monogram if omitted or fetch fails",
+    "logo": "optional remote URL OR repo-relative path (e.g. images/foo.png); falls back to colored monogram if missing",
     "url": "optional clickthrough; falls back to # if omitted"
   },
   "projects": [
@@ -10,7 +10,7 @@
       "name": "Cue Clock",
       "status": "shipped",
       "url": "https://cueclock.app",
-      "logo": null
+      "logo": "images/cueclock.png"
     },
     {
       "name": "Stream Monitor",
