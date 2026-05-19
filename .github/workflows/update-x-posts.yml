@@ -15,6 +15,11 @@ on:
 permissions:
   contents: write
 
+# Shared README-writer concurrency group — see other workflows for context.
+concurrency:
+  group: readme-writer
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -24,19 +29,21 @@ jobs:
 
       - name: Run updater
         env:
-          # Secrets are not user input — safe to surface via env block.
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
           X_USER_ID: ${{ secrets.X_USER_ID }}
         run: node .github/scripts/update-x-posts.mjs
 
       - name: Commit if changed
+        # Pull-rebase before push so a concurrent push from another workflow
+        # doesn't cause "cannot lock ref" — we just rebase our README diff
+        # on top and re-push.
         run: |
-          # Skip empty commits — README only changes when ranking/content shifts.
           if [[ -n "$(git status --porcelain README.md)" ]]; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
             git commit -m "chore: refresh top X posts"
+            git pull --rebase origin main
             git push
           else
             echo "No README changes."
