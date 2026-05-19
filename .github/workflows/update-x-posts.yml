@@ -34,17 +34,17 @@ jobs:
         run: node .github/scripts/update-x-posts.mjs
 
       - name: Commit if changed
-        # Pull-rebase before push so a concurrent push from another workflow
-        # doesn't cause "cannot lock ref" — we just rebase our README diff
-        # on top and re-push.
+        # Stage README.md, the generated SVG, and the avatar cache. Use
+        # `git diff --cached --quiet` so we don't push empty commits when
+        # nothing actually changed (most hours).
         run: |
-          if [[ -n "$(git status --porcelain README.md)" ]]; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "chore: refresh top X posts"
-            git pull --rebase origin main
-            git push
-          else
-            echo "No README changes."
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md .github/assets/x-posts.svg .github/data/x-cache.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
           fi
+          git commit -m "chore: refresh top X posts"
+          git pull --rebase origin main
+          git push

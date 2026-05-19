@@ -2,6 +2,10 @@ name: Update Projects Section
 
 # Triggered whenever you edit shipped.json. Also exposed via workflow_dispatch
 # in case you want to manually re-render (e.g. after editing the script).
+#
+# NOTE: counts.json and .github/assets/bricks/*.svg are deliberately NOT in
+# `paths:` — they are *outputs* of this workflow. Including them would create
+# a write-loop where every run triggers the next.
 on:
   push:
     branches: [main]
@@ -14,9 +18,8 @@ on:
 permissions:
   contents: write
 
-# Serialize concurrent runs so two quick pushes don't race each other to
-# `git push` on the same branch. cancel-in-progress is false so the later run
-# waits for the earlier one and then re-renders against the latest state.
+# Shared readme-writer group serializes runs across all three README-writing
+# workflows (projects/building/x-posts) so they queue instead of racing.
 concurrency:
   group: readme-writer
   cancel-in-progress: false
@@ -24,23 +27,22 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
+    timeout-minutes: 3
     steps:
       - uses: actions/checkout@v4
       - run: node .github/scripts/update-projects.mjs
       - name: Commit if changed
-        # Pull-rebase before push handles the case where another workflow
-        # (snake, pacman, sibling README updater) pushed between our checkout
-        # and our push. Without this, we'd hit the "cannot lock ref" failure
-        # whenever workflows overlap by even a few seconds.
+        # We stage README.md, counts.json, and the bricks asset directory.
+        # `git diff --cached --quiet` exits 0 iff nothing staged → skip commit
+        # cleanly (no empty-noise commits when the projects list is unchanged).
         run: |
-          if [[ -n "$(git status --porcelain README.md)" ]]; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
-            git commit -m "chore: refresh projects section"
-            git pull --rebase origin main
-            git push
-          else
-            echo "No README changes."
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md .github/data/counts.json .github/assets/bricks/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
           fi
+          git commit -m "chore: refresh projects bricks"
+          git pull --rebase origin main
+          git push

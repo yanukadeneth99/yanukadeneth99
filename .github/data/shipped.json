@@ -1,17 +1,28 @@
 {
   "year": 2026,
-  "shipped": [
+  "_schema": {
+    "status": "one of: shipped | active | upcoming",
+    "logo": "optional URL (PNG/SVG/JPG); falls back to colored monogram if omitted or fetch fails",
+    "url": "optional clickthrough; falls back to # if omitted"
+  },
+  "projects": [
     {
-      "name": "Example: Shipped Project",
-      "url": "https://github.com/yanukadeneth99/example",
-      "date": "2026-01-15",
-      "note": "Replace these examples with real things you've shipped."
-    }
-  ],
-  "upcoming": [
+      "name": "Cue Clock",
+      "status": "shipped",
+      "url": "https://cueclock.app",
+      "logo": null
+    },
     {
-      "name": "Example: Upcoming Project",
-      "note": "Replace with what you're planning."
+      "name": "Stream Monitor",
+      "status": "active",
+      "url": "https://streammonitor.app",
+      "logo": null
+    },
+    {
+      "name": "AI Workflow 1",
+      "status": "upcoming",
+      "url": null,
+      "logo": null
     }
   ]
 }

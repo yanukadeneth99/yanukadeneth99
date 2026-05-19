@@ -1,38 +1,23 @@
 <div align="center">
 
-<!-- Header capsule — gradient banner with the new identity baked in. -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=200&section=header&text=YASHURA&fontSize=80&fontColor=ffffff&fontAlignY=45&animation=fadeIn" width="100%" alt="Header" />
+<!-- Compact header capsule: height 130 (was 200), title-only, no subtitle.
+     Saves ~70vh of vertical space so the live widgets are visible above the
+     fold for most laptop viewports. -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=130&section=header&text=YASHURA&fontSize=64&fontColor=ffffff&fontAlignY=42&animation=fadeIn" width="100%" alt="Header" />
 
-<!-- Typing tagline — reframed around "make what's needed" rather than a job title. -->
-<a href="https://yanukadeneth.com">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2800&pause=900&color=2F81F7&center=true&vCenter=true&width=720&lines=I+build+what's+needed.;Films%2C+games%2C+music%2C+apps+%E2%80%94+stack+doesn't+matter.;The+problem+does.;Currently+shipping." alt="Typing intro" />
-</a>
-
-<br/>
-
-<!-- Quick CTAs: portfolio + sponsor + visitor badge. -->
+<!-- Single row of badges. Left group = CTAs (visitors/portfolio/ko-fi),
+     right group = project status counts (shipped/active/upcoming). The
+     non-breaking-space pipe acts as a visual divider — GitHub strips CSS
+     so we use a literal character rather than a styled border. Project
+     counts read from counts.json (written by update-projects script). -->
 <p align="center">
-  <!-- komarev.com supports the for-the-badge style natively, so the visitor
-       counter now matches the height of the Portfolio and Ko-fi buttons. -->
   <img src="https://komarev.com/ghpvc/?username=yanukadeneth99&style=for-the-badge&color=2f81f7&label=VISITORS" alt="Visitors" />
-  <a href="https://yanukadeneth.com">
-    <img src="https://img.shields.io/badge/Portfolio-2f81f7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-  </a>
-  <a href="https://ko-fi.com/yanukadeneth99">
-    <img src="https://img.shields.io/badge/Support_on_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" />
-  </a>
-</p>
-
-<!-- Project count badges — shields.io reads shipped.json via JSONPath and
-     uses array .length for the count, so the numbers always match the lists
-     rendered below by the update-projects workflow. -->
-<p align="center">
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fshipped.json&query=%24.shipped.length&label=Shipped%20in%202026&color=2f81f7&style=for-the-badge&logo=rocket&logoColor=white" alt="Shipped in 2026" />
-  </a>
-  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fshipped.json&query=%24.upcoming.length&label=Upcoming&color=D85F82&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" />
-  </a>
+  <a href="https://yanukadeneth.com"><img src="https://img.shields.io/badge/Portfolio-2f81f7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://ko-fi.com/yanukadeneth99"><img src="https://img.shields.io/badge/Support_on_Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" /></a>
+  &nbsp;<img src="https://img.shields.io/badge/%20-%7C%20-0d1117?style=for-the-badge" alt="|" />&nbsp;
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.shipped&label=Shipped&color=3FB950&style=for-the-badge&logo=check&logoColor=white" alt="Shipped" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.active&label=Active&color=D29922&style=for-the-badge&logo=hammer&logoColor=white" alt="Active" /></a>
+  <a href="https://github.com/yanukadeneth99/yanukadeneth99/blob/main/.github/data/shipped.json"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fyanukadeneth99%2Fyanukadeneth99%2Fmain%2F.github%2Fdata%2Fcounts.json&query=%24.upcoming&label=Upcoming&color=8B949E&style=for-the-badge&logo=hourglass&logoColor=white" alt="Upcoming" /></a>
 </p>
 
 </div>
@@ -56,13 +41,11 @@
 ### 🚀 Projects
 
 <!-- PROJECTS:START -->
-**Shipped in 2026**
-
-- ✅ [**Example: Shipped Project**](https://github.com/yanukadeneth99/example) · `2026-01-15` — Replace these examples with real things you've shipped.
-
-**Upcoming**
-
-- 🔜 **Example: Upcoming Project** — Replace with what you're planning.
+<p align="center">
+  <a href="https://cueclock.app" title="Cue Clock"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/cue-clock.svg?v=1779185090544" alt="Cue Clock" width="130" height="160" /></a>
+  <a href="https://streammonitor.app" title="Stream Monitor"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/stream-monitor.svg?v=1779185090544" alt="Stream Monitor" width="130" height="160" /></a>
+  <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779185090544" alt="AI Workflow 1" width="130" height="160" /></a>
+</p>
 <!-- PROJECTS:END -->
 
 ---
@@ -71,7 +54,10 @@
      A markdown table forces them onto one row regardless of viewport width.
      Replace YOUR_DISCORD_ID and YOUR_SPOTIFY_UID — see setup notes below. -->
 
-### 🎧 Right Now
+<!-- Centered H3: markdown headings default to left-aligned because they live
+     in document flow, not in a centered container. Inline <h3 align="center">
+     overrides that for just this heading without affecting siblings. -->
+<h3 align="center">🎧 Right Now</h3>
 
 <!-- width="100%" on the table forces it to span the full content area; the
      same attribute on each <img> makes the SVG widgets stretch to fill their
@@ -137,19 +123,11 @@
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub Snake" src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/github-contribution-grid-snake.svg">
-</picture>
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph.svg">
   <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/output/pacman-contribution-graph.svg">
 </picture>
 
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=80&section=footer" width="100%" alt="" />
 
 </div>
