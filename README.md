@@ -30,9 +30,9 @@
 
 <!-- PROJECTS:START -->
 <p align="center">
-  <a href="https://cueclock.app" title="Cue Clock"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/cue-clock.svg?v=1779187922882" alt="Cue Clock" width="130" height="160" /></a>
-  <a href="https://streammonitor.app" title="Stream Monitor"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/stream-monitor.svg?v=1779187922883" alt="Stream Monitor" width="130" height="160" /></a>
-  <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779187922883" alt="AI Workflow 1" width="130" height="160" /></a>
+  <a href="https://cueclock.app" title="Cue Clock"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/cue-clock.svg?v=1779188146765" alt="Cue Clock" width="130" height="160" /></a>
+  <a href="https://streammonitor.app" title="Stream Monitor"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/stream-monitor.svg?v=1779188146765" alt="Stream Monitor" width="130" height="160" /></a>
+  <a href="#" title="AI Workflow 1"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/bricks/ai-workflow-1.svg?v=1779188146765" alt="AI Workflow 1" width="130" height="160" /></a>
 </p>
 <!-- PROJECTS:END -->
 
