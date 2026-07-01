@@ -1,24 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="240" viewBox="0 0 480 240" role="img" aria-label="Top Languages">
   <rect width="480" height="240" fill="#0D1117" rx="12"/>
   <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#A371F7">Top Languages</text>
-  <path d="M 110,55 A 75,75 0 1 1 93.33544597669629,203.12518471227537 L 100.00126758601778,173.87511082736523 A 45,45 0 1 0 110,85 Z" fill="#3178C6"/>
-  <path d="M 93.33544597669629,203.12518471227537 A 75,75 0 0 1 35.41508340909368,137.87973458484146 L 65.24905004545622,134.72784075090487 A 45,45 0 0 0 100.00126758601778,173.87511082736523 Z" fill="#B07219"/>
-  <path d="M 35.41508340909368,137.87973458484146 A 75,75 0 0 1 60.693471313819074,73.48569889913867 L 80.41608278829145,96.0914193394832 A 45,45 0 0 0 65.24905004545622,134.72784075090487 Z" fill="#AA6746"/>
-  <path d="M 60.693471313819074,73.48569889913867 A 75,75 0 0 1 82.51524428982485,60.21756522195578 L 93.50914657389491,88.13053913317347 A 45,45 0 0 0 80.41608278829145,96.0914193394832 Z" fill="#F1E05A"/>
-  <path d="M 82.51524428982485,60.21756522195578 A 75,75 0 0 1 95.54212335083673,56.40672719060811 L 101.32527401050204,85.84403631436487 A 45,45 0 0 0 93.50914657389491,88.13053913317347 Z" fill="#3572A5"/>
-  <path d="M 95.54212335083673,56.40672719060811 A 75,75 0 0 1 103.71351076688255,55.26393070864712 L 106.22810646012952,85.15835842518828 A 45,45 0 0 0 101.32527401050204,85.84403631436487 Z" fill="#89E051"/>
-  <path d="M 103.71351076688255,55.26393070864712 A 75,75 0 0 1 106.89824468806012,55.06416668919434 L 108.13894681283607,85.0385000135166 A 45,45 0 0 0 106.22810646012952,85.15835842518828 Z" fill="#A371F7"/>
-  <path d="M 106.89824468806012,55.06416668919434 A 75,75 0 0 1 109.99999999999991,55 L 109.99999999999996,85 A 45,45 0 0 0 108.13894681283607,85.0385000135166 Z" fill="#A371F7"/>
+  <path d="M 110,55 A 75,75 0 1 1 93.2269543090448,203.100375773652 L 99.93617258542687,173.86022546419122 A 45,45 0 1 0 110,85 Z" fill="#3178C6"/>
+  <path d="M 93.2269543090448,203.100375773652 A 75,75 0 0 1 35.40839332331136,137.8161508039558 L 65.24503599398682,134.68969048237346 A 45,45 0 0 0 99.93617258542687,173.86022546419122 Z" fill="#B07219"/>
+  <path d="M 35.40839332331136,137.8161508039558 A 75,75 0 0 1 60.71409521558199,73.46771197287975 L 80.4284571293492,96.08062718372786 A 45,45 0 0 0 65.24503599398682,134.68969048237346 Z" fill="#AA6746"/>
+  <path d="M 60.71409521558199,73.46771197287975 A 75,75 0 0 1 82.52856168008694,60.212321455466 L 93.51713700805216,88.1273928732796 A 45,45 0 0 0 80.4284571293492,96.08062718372786 Z" fill="#F1E05A"/>
+  <path d="M 82.52856168008694,60.212321455466 A 75,75 0 0 1 95.54938442212162,56.405301077996256 L 101.32963065327297,85.84318064679775 A 45,45 0 0 0 93.51713700805216,88.1273928732796 Z" fill="#3572A5"/>
+  <path d="M 95.54938442212162,56.405301077996256 A 75,75 0 0 1 103.71670065688981,55.26366245684184 L 106.23002039413389,85.15819747410511 A 45,45 0 0 0 101.32963065327297,85.84318064679775 Z" fill="#89E051"/>
+  <path d="M 103.71670065688981,55.26366245684184 A 75,75 0 0 1 106.89982138341007,55.064101442998364 L 108.13989283004604,85.03846086579902 A 45,45 0 0 0 106.23002039413389,85.15819747410511 Z" fill="#A371F7"/>
+  <path d="M 106.89982138341007,55.064101442998364 A 75,75 0 0 1 109.99999999999999,55 L 109.99999999999999,85 A 45,45 0 0 0 108.13989283004604,85.03846086579902 Z" fill="#A371F7"/>
   
       <rect x="220" y="46" width="12" height="12" rx="3" fill="#3178C6"/>
       <text x="240" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#E6EDF3">TypeScript</text>
       <text x="460" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#7D8590" text-anchor="end">53.6%</text>
       <rect x="220" y="66" width="12" height="12" rx="3" fill="#B07219"/>
       <text x="240" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#E6EDF3">Java</text>
-      <text x="460" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#7D8590" text-anchor="end">19.8%</text>
+      <text x="460" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#7D8590" text-anchor="end">19.7%</text>
       <rect x="220" y="86" width="12" height="12" rx="3" fill="#AA6746"/>
       <text x="240" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#E6EDF3">Solidity</text>
-      <text x="460" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#7D8590" text-anchor="end">15.3%</text>
+      <text x="460" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#7D8590" text-anchor="end">15.2%</text>
       <rect x="220" y="106" width="12" height="12" rx="3" fill="#F1E05A"/>
       <text x="240" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#E6EDF3">JavaScript</text>
       <text x="460" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#7D8590" text-anchor="end">5.4%</text>
