@@ -93,9 +93,9 @@ If something here helped you, a coffee keeps the lights on. 🙏</em></p>
 
 <!-- XPOSTS:START -->
 <p>
-  <a href="https://x.com/yanukadeneth99/status/2076519929726280034"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2076519929726280034.svg?v=1784622098314" alt="X post 2076519929726280034" width="880" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2076494586814586887"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2076494586814586887.svg?v=1784622098314" alt="X post 2076494586814586887" width="880" /></a><br/><br/>
-  <a href="https://x.com/yanukadeneth99/status/2077774758335099216"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2077774758335099216.svg?v=1784622098314" alt="X post 2077774758335099216" width="880" /></a>
+  <a href="https://x.com/yanukadeneth99/status/2077774758335099216"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2077774758335099216.svg?v=1784708520025" alt="X post 2077774758335099216" width="880" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2076885100315435063"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2076885100315435063.svg?v=1784708520025" alt="X post 2076885100315435063" width="880" /></a><br/><br/>
+  <a href="https://x.com/yanukadeneth99/status/2079081819811799246"><img src="https://raw.githubusercontent.com/yanukadeneth99/yanukadeneth99/main/.github/assets/x-posts/2079081819811799246.svg?v=1784708520025" alt="X post 2079081819811799246" width="880" /></a>
 </p>
 <!-- XPOSTS:END -->
 
