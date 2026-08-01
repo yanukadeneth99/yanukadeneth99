@@ -4,43 +4,46 @@
   <text x="860" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#7D8590" text-anchor="end">last 12 months</text>
   <line x1="24" y1="210.5" x2="856" y2="210.5" stroke="#7D8590" stroke-opacity="0.25" stroke-width="1"/>
   
-      <rect x="28.00" y="210.00" width="56.00" height="0.00" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="56.00" y="204.00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">0</text>
-      <text x="56.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jul</text>
-      <rect x="92.00" y="189.64" width="56.00" height="20.36" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="120.00" y="183.64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">31</text>
-      <text x="120.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Aug</text>
-      <rect x="156.00" y="203.43" width="56.00" height="6.57" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="184.00" y="197.43" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">10</text>
-      <text x="184.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Sep</text>
-      <rect x="220.00" y="208.69" width="56.00" height="1.31" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="248.00" y="202.69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">2</text>
-      <text x="248.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Oct</text>
-      <rect x="284.00" y="181.76" width="56.00" height="28.24" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="312.00" y="175.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">43</text>
-      <text x="312.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Nov</text>
-      <rect x="348.00" y="141.69" width="56.00" height="68.31" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="376.00" y="135.69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">104</text>
-      <text x="376.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Dec</text>
-      <rect x="412.00" y="82.58" width="56.00" height="127.42" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="440.00" y="76.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">194</text>
-      <text x="440.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jan</text>
-      <rect x="476.00" y="55.00" width="56.00" height="155.00" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="504.00" y="49.00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">236</text>
-      <text x="504.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Feb</text>
-      <rect x="540.00" y="143.01" width="56.00" height="66.99" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="568.00" y="137.01" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">102</text>
-      <text x="568.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Mar</text>
-      <rect x="604.00" y="71.42" width="56.00" height="138.58" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="632.00" y="65.42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">211</text>
-      <text x="632.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Apr</text>
-      <rect x="668.00" y="127.25" width="56.00" height="82.75" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="696.00" y="121.25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">126</text>
-      <text x="696.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">May</text>
-      <rect x="732.00" y="185.70" width="56.00" height="24.30" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="760.00" y="179.70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">37</text>
-      <text x="760.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jun</text>
-      <rect x="796.00" y="130.53" width="56.00" height="79.47" rx="6" fill="#A371F7" fill-opacity="0.85"/>
-      <text x="824.00" y="124.53" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">121</text>
-      <text x="824.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jul</text>
+      <rect x="28.00" y="210.00" width="51.43" height="0.00" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="53.71" y="204.00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">0</text>
+      <text x="53.71" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jul</text>
+      <rect x="87.43" y="189.64" width="51.43" height="20.36" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="113.14" y="183.64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">31</text>
+      <text x="113.14" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Aug</text>
+      <rect x="146.86" y="203.43" width="51.43" height="6.57" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="172.57" y="197.43" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">10</text>
+      <text x="172.57" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Sep</text>
+      <rect x="206.29" y="208.69" width="51.43" height="1.31" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="232.00" y="202.69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">2</text>
+      <text x="232.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Oct</text>
+      <rect x="265.71" y="181.76" width="51.43" height="28.24" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="291.43" y="175.76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">43</text>
+      <text x="291.43" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Nov</text>
+      <rect x="325.14" y="141.69" width="51.43" height="68.31" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="350.86" y="135.69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">104</text>
+      <text x="350.86" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Dec</text>
+      <rect x="384.57" y="82.58" width="51.43" height="127.42" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="410.29" y="76.58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">194</text>
+      <text x="410.29" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jan</text>
+      <rect x="444.00" y="55.00" width="51.43" height="155.00" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="469.71" y="49.00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">236</text>
+      <text x="469.71" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Feb</text>
+      <rect x="503.43" y="143.01" width="51.43" height="66.99" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="529.14" y="137.01" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">102</text>
+      <text x="529.14" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Mar</text>
+      <rect x="562.86" y="71.42" width="51.43" height="138.58" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="588.57" y="65.42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">211</text>
+      <text x="588.57" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Apr</text>
+      <rect x="622.29" y="127.25" width="51.43" height="82.75" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="648.00" y="121.25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">126</text>
+      <text x="648.00" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">May</text>
+      <rect x="681.71" y="185.70" width="51.43" height="24.30" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="707.43" y="179.70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">37</text>
+      <text x="707.43" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jun</text>
+      <rect x="741.14" y="130.53" width="51.43" height="79.47" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="766.86" y="124.53" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">121</text>
+      <text x="766.86" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Jul</text>
+      <rect x="800.57" y="210.00" width="51.43" height="0.00" rx="6" fill="#A371F7" fill-opacity="0.85"/>
+      <text x="826.29" y="204.00" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#E6EDF3" text-anchor="middle">0</text>
+      <text x="826.29" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#7D8590" text-anchor="middle">Aug</text>
 </svg>
